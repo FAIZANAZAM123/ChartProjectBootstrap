@@ -1643,7 +1643,7 @@
 
                 <div class="container d-lg-none">
 
-                    <div class=" endsection row ms-2">
+                    <div id="endsection" class=" endsection row ms-2">
                         <div class="col-2">
     
                             <div class="">
@@ -2257,18 +2257,33 @@
     <script>
 
 
+
+
+
         function navtoggle() {
             const nav = document.getElementById('sidebar');
             const mainContent = document.getElementById('mainContent');
 
+
+
+            const endsection=document.getElementById('endsection');
+
+
+
+
             if (nav.style.display === 'none' || nav.style.display === '') {
                 nav.style.display = 'block';
                 mainContent.classList.add('bordergiveparent');
+                endsection.style.width='88%';
+
                 mainContent.classList.remove('borderrevised');
             } else {
                 nav.style.display = 'none';
                 mainContent.classList.remove('bordergiveparent');
                 mainContent.classList.add('borderrevised');
+                endsection.style.width='100%';
+
+                
             }
 
 
@@ -2285,6 +2300,16 @@
             const toggler3=document.getElementById('mainCard');
             const toggler4= document.getElementById('detailsCard');
             const nav = document.getElementById('sidebar');
+
+
+            const mainContent = document.getElementById('mainContent');
+
+    mainContent.classList.add('bordergiveparent');
+                mainContent.classList.remove('borderrevised');
+
+
+
+
 
             const firstcontent = document.getElementById('firstcontent');
 
@@ -2340,7 +2365,17 @@
 
             const firstcontent=document.getElementById('firstcontent');
 
+            const endsection=document.getElementById('endsection');
+            endsection.style.width='100%';
 
+
+
+
+
+            const mainContent = document.getElementById('mainContent');
+
+mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
 
             if (toggler.style.display === 'none' || '') {
                 toggler.style.display = 'block';
@@ -2377,9 +2412,13 @@
 
             const nav = document.getElementById('sidebar');
             const firstcontent=document.getElementById('firstcontent');
+            const endsection=document.getElementById('endsection');
+            endsection.style.width='100%';
 
+            const mainContent = document.getElementById('mainContent');
 
-
+mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
             if (toggler.style.display === 'none' || '') {
                 toggler.style.display = 'block';
                 toggler1.style.display = 'none';
@@ -2417,9 +2456,13 @@
 
             const firstcontent=document.getElementById('firstcontent');
 
+            const mainContent = document.getElementById('mainContent');
 
+mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
 
-
+            const endsection=document.getElementById('endsection');
+            endsection.style.width='100%';
             const widgetContainer = document.querySelector('.tradingview-widget-container');
 
 
@@ -2458,10 +2501,14 @@ const toggler1 = document.getElementById('trademobilepage');
 const toggler2 = document.getElementById('widgetmobilescreen');
 const toggler3=document.getElementById('mainCard');
 const toggler4 = document.getElementById('historymobilepage');
+const endsection=document.getElementById('endsection');
+            endsection.style.width='100%';
 
 
+const mainContent = document.getElementById('mainContent');
 
-
+mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
 
 
 
@@ -2476,8 +2523,8 @@ if (toggler.style.display === 'none' || '') {
     toggler.style.display = 'block';
 
     nav.style.display = 'none';
-    firstcontent.style.display = 'block';
 
+    firstcontent.style.display = 'flex';
 
 
     toggler1.style.display = 'none';

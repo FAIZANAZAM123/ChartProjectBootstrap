@@ -1036,7 +1036,7 @@ tradingview_c6b91 {
     #toleftnavbartoggle {
         position: absolute;
         left: 1%;
-         top:2.8%;/* To vertically center the button */
+         top:3.9%;/* To vertically center the button */
         transform: translateY(-50%); /* Adjusts the positioning to make it truly centered vertically */
         background-color: white;
         
@@ -1048,9 +1048,8 @@ tradingview_c6b91 {
     #detailsCard {
         margin: 0px !important;
         display: none;
-        height:200px;
-
-        width: 100% !important;
+        height:600px;
+width: 100% !important ;
         
         z-index: 100000;
     }
@@ -1099,8 +1098,8 @@ tradingview_c6b91 {
 .endsection{
     /* display: block !important; */
     display: flex !important;
-    justify-content: space-around;
-    width: 100% !important;
+    justify-content: space-between;
+    width: 88%;
     z-index: 1000;
     top: 90%;
     align-items: end;
@@ -1135,7 +1134,6 @@ i{
 .historymobilepage{
     display: none;
 }
-
 
 
 
