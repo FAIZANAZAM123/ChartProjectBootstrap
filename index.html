@@ -23,7 +23,7 @@
 
     <div class="container-fluid h-100">
         <div class="row h-100 ">
-            <nav id="sidebar" class="col-3 col-sm-2 col-md-1 col-lg-1 bg-light sidebar">
+            <!-- <nav id="sidebar" class="col-3 col-sm-2 col-md-1 col-lg-1 bg-light sidebar">
                 <div>
                     <div class="firstlogo">
                         <li class="nav-item" onclick="togglecard()">
@@ -92,12 +92,95 @@
                     <i onclick="firstchart()" class="fas fa-bars mb-3 text-black fa-lg"></i>
                     <i onclick="secondchart()" class="fas fa-history text-black fa-lg"></i>
                 </div>
+            </nav> -->
+
+
+
+
+
+
+
+
+
+            <div class=" ">
+
+
+
+
+
+
+            </div>
+            <nav id="sidebar" class="col-3 d-lg-block col-sm-2 col-md-1 col-lg-1 bg-light sidebar">
+
+                <div id="sidebarContents " class="  d-lg-block">
+                    <ul class="nav sidebarul flex-column">
+
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-crosshairs text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">
+                                <i class="fas fa-chart-line text-black fa-lg"></i>
+
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="d-flex sidebardown flex-column">
+                        <i onclick="firstchart()" class="fas d-lg-block d-none fa-bars mb-3 text-black fa-lg"></i>
+                        <i onclick="secondchart()" class="fas d-lg-block d-none fa-history text-black fa-lg"></i>
+                    </div>
+                </div>
             </nav>
 
-            <main class="col-md-11 bordergiveparent col-lg-11 col-sm-11 col-xs-11 ">
 
 
-                <div class="row bordergive align-items-center firstrow text-dark">
+
+
+
+
+            <main id="mainContent" class=" col-md-11 bordergiveparent   col-lg-11 col-sm-11 col-xs-11 ">
+
+
+                <div id="firstcontent" class="row bordergive align-items-center firstrow text-dark">
                     <div class="dropdown">
 
 
@@ -311,8 +394,18 @@
 
                     </div>
                     <!-- Dropdown with SVG Icon -->
+
                     <div class="col-1 no1 col-md-3 col-sm-3 justify-content-center f d-flex align-items-center">
-                        <li class="nav-item dropdown">
+                        <li style="margin-top: 20px ;" class="nav-item firstlogo d-md-none d-none d-lg-block"
+                            onclick="togglecard()">
+                            <i class="fas fa-bars fa-lg"></i>
+                        </li>
+
+                        <button id="toleftnavbartoggle" style="background-color: white; border: none;"
+                            onclick="navtoggle()" class="d-lg-none">
+                            <i class="fas fa-bars "></i>
+                        </button>
+                        <li id="margingiving2" class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -341,17 +434,46 @@
 
 
 
-                    <div
-                        class="col-lg-6 no2 col-md-9 col-sm-9 col-9 d-flex align-items-center  justify-content-between">
-                        <h5>M1</h5>
-                        <h5>M5</h5>
-                        <h5>M15</h5>
-                        <h5>M30</h5>
-                        <h5>H1</h5>
-                        <h5>H4</h5>
-                        <h5>D1</h5>
-                        <h5>W1</h5>
-                        <h5>MN</h5>
+                    <div id="margingiving"
+                        class="col-lg-6 margingiving  col-md-9 col-sm-9 col-9 d-flex align-items-center  justify-content-between">
+
+
+
+                        <h5 class="tohide">M1</h5>
+                        <h5 class="tohide">M5</h5>
+                        <h5 class="tohide">M15</h5>
+                        <h5 class="tohide">M30</h5>
+                        <h5 class="tohide">H1</h5>
+                        <h5 class="tohide">H4</h5>
+                        <h5 class="tohide">D1</h5>
+                        <h5 class="tohide">W1</h5>
+                        <h5 class="tohide">MN</h5>
+
+                        <li class="nav-item dropdown toshow speciali  ">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+
+                                M5
+                            </a>
+                            <ul class="dropdown-menu drop" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">M5</a></li>
+                                <li><a class="dropdown-item" href="#">M15</a></li>
+                                <li><a class="dropdown-item" href="#">M30</a></li>
+                                <li><a class="dropdown-item" href="#">H1</a></li>
+                                <li><a class="dropdown-item" href="#">H4 </a></li>
+                                <li><a class="dropdown-item" href="#">D1</a></li>
+                                <li><a class="dropdown-item" href="#">D1</a></li>
+                                <li><a class="dropdown-item" href="#">W1</a></li>
+                                <li><a class="dropdown-item" href="#">MN</a></li>
+
+
+
+
+
+
+
+                            </ul>
+                        </li>
 
 
 
@@ -389,13 +511,13 @@
                         </svg>
 
 
-                        <svg onclick="toggleCard()" width="24" height="24" viewBox="0 0 24 24"
-                        xmlns="http://www.w3.org/2000/svg">
-                        <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
-                        <path fill="blue" fill-rule="evenodd" fill="blue" clip-rule="evenodd"
-                            d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-1 2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12Z">
-                        </path>
-                    </svg>
+                        <svg class="tohide" onclick="toggleCard()" width="24" height="24" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
+                            <path fill="blue" fill-rule="evenodd" fill="blue" clip-rule="evenodd"
+                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-1 2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12Z">
+                            </path>
+                        </svg>
 
 
 
@@ -404,8 +526,10 @@
 
 
 
-                    <div
-                        class="col-lg-5 no3 col-md-12 col-sm-12 col-12 increase d-flex align-items-center justify-content-end">
+
+
+                    <div id="hiddingit"
+                        class="  col-lg-5 no3 col-md-12 col-sm-12 col-12 increase d-flex align-items-center justify-content-end">
 
                         <div class="d-flex flex-column mr-3">
                             <span class="text-center tex me-3">Account ID</span>
@@ -422,7 +546,8 @@
                             <p class="tex1">13332.32</p>
                         </div>
 
-                        <div id="containerToFullscreen" onclick="toggleFullScreen()" style="display: inline-block;">
+                        <div class=" " id="containerToFullscreen" onclick="toggleFullScreen()"
+                            style="display: inline-block;">
 
 
 
@@ -547,7 +672,7 @@
                             <div class=" w-25 addbutton  mt-3 btn btn-primary">
                                 Add
                             </div>
-                           
+
 
                         </div>
 
@@ -570,14 +695,15 @@
 
                 <div class="row viewss mt-lg-0 ">
                     <!-- TradingView Widget BEGIN -->
-                    <div class="tradingview-widget-container col-12 col-lg-8 col-md-12 col-sm-12">
+                    <div id="widgetmobilescreen"
+                        class="tradingview-widget-container col-12 col-lg-8 col-md-12 col-sm-12">
                         <div id="tradingview_c6b91"></div>
                         <div class="tradingview-widget-copyright"><a href="https://www.tradingview.com/"
                                 rel="noopener nofollow" target="_blank"><span class="blue-text">Track all markets on
                                     TradingView</span></a></div>
                         <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
                         <script type="text/javascript">
-                          
+
 
 
                             function createTradingViewWidget(theme) {
@@ -585,7 +711,7 @@
 
                                 new TradingView.widget({
                                     "autosize": false,
-                                    "width":"100%",
+                                    "width": "100%",
                                     "height": "340",
                                     "symbol": "NASDAQ:AAPL",
                                     "interval": "D",
@@ -625,36 +751,33 @@
                                     class="position-absolute top-50  end-0 translate-middle-y fas fa-times clickedcross"></i>
 
                             </form>
-                            <!-- fields -->
                             <div class="dropdown-card" id="dropdownCard">
                                 <div class="dropdown-row">
                                     <span class="word"><span onclick="showSecondDropdown(event)">Forex1</span></span>
                                     <span class="count">10</span>
                                 </div>
                                 <div class="dropdown-row">
-                                    <span class="word"><span onclick="showSecondDropdown(event)">Forex2</span></span>
+                                    <span class="word"><span onclick="showThirdDropdown(event)">Spot
+                                            Metals</span></span>
                                     <span class="count">15</span>
                                 </div>
                                 <div class="dropdown-row">
-                                    <span class="word"><span onclick="showSecondDropdown(event)">Forex3</span></span>
+                                    <span class="word"><span onclick="showFourthDropdown(event)">Stock</span></span>
                                     <span class="count">15</span>
                                 </div>
                                 <div class="dropdown-row">
-                                    <span class="word"><span onclick="showSecondDropdown(event)">Forex4</span></span>
+                                    <span class="word"><span onclick="showFifthDropdown(event)">Stock2</span></span>
                                     <span class="count">15</span>
                                 </div>
                                 <div class="dropdown-row">
-                                    <span class="word"><span onclick="showSecondDropdown(event)">Forex5</span></span>
+                                    <span class="word"><span onclick="showSixthDropdown(event)">Cryptos</span></span>
                                     <span class="count">15</span>
                                 </div>
                                 <div class="dropdown-row">
-                                    <span class="word"><span onclick="showSecondDropdown(event)">Forex6</span></span>
+                                    <span class="word"><span onclick="showSeventhDropdown(event)">Stock3</span></span>
                                     <span class="count">15</span>
                                 </div>
-                                <div class="dropdown-row">
-                                    <span class="word"><span onclick="showSecondDropdown(event)">Forex7</span></span>
-                                    <span class="count">15</span>
-                                </div>
+
 
                             </div>
 
@@ -667,7 +790,7 @@
 
 
                                 <div class="dropdown-row" id="">
-                                    <span onclick="gamer()">
+                                    <span onclick="gamer(dropdowncard2)">
                                         <i style='font-size:24px' class='fas'>&#xf104;</i>
 
 
@@ -720,7 +843,7 @@
                                 </div>
                                 <div class="dropdown-row1">
                                     <div class="dropdown-row2">
-                                        <span>FIFTH</span>
+                                        <span class="description">FIFTH</span>
                                         <button class="toggle-btn" onclick="toggleIcon(this)"><i
                                                 class="fas fa-plus"></i></button>
                                     </div>
@@ -746,58 +869,438 @@
                             </div>
 
 
+                            <div class="dropdown-card3" id="dropdowncard3">
 
 
-                            <!-- end -->
-
-                            <!-- <div class="row  searchbottom ">
-
-
+                                <div class="dropdown-row" id="">
+                                    <span onclick="gamer(dropdowncard3)">
+                                        <i style='font-size:24px' class='fas'>&#xf104;</i>
 
 
 
-                                <div class="col ">
-                                    <label class="mb-0 rightside">Symbol</label>
-                                    <div class="content d-flex align-center justify-center">
-                                        <i style='font-size:24px;line-height: 1.7; height:100%' class='fas'>&#xf0de;</i>
-                                        <p id="selectedDescriptions" class="mb-0 fromleft"></p>
-                                    </div>
-
-
-                                </div>
-                                <div class="col text-center ">
-                                    <label class="mb-0 rightside ">Bid</label>
-
-                                    <div class="content">
-                                        <p class="mb-0">0</p>
-                                    </div>
-                                </div>
-                                <div class="col text-center">
-                                    <label class="mb-0 rightside">Speed</label>
-
-                                    <div class="content">
-
-                                        <p class="mb-0">0</p>
-                                    </div>
-                                </div>
-                                <div class="col text-center">
-                                    <label class="mb-0 rightside last child">Spread</label>
-
-                                    <div class="content">
-
-                                        <p class="mb-0">0</p>
-                                    </div>
+                                    </span>
                                 </div>
 
 
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">XAUUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Gold </div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">XAGUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Silver</div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">Copper</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Spot Grade</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">Brent</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">UK spot oil</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">NAT.GAS</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Natural Gas</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span>Gold</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">GoldDoz</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">GOLD DGR</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">gold</div>
+                                </div>
 
 
 
-                            </div> -->
 
 
-                            <div class="searchbottom " style="background-color: wht;">
-                                <!-- Header section for labels -->
+
+
+                            </div>
+
+
+
+
+                            <div class="dropdown-card4" id="dropdowncard4">
+
+
+                                <div class="dropdown-row" id="">
+                                    <span onclick="gamer(dropdowncard4)">
+                                        <i style='font-size:24px' class='fas'>&#xf104;</i>
+
+
+
+                                    </span>
+                                </div>
+
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">BAC</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Gold </div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">GM</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Silver</div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">GPM</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Spot Grade</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">AA</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">UK spot oil</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">KO</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Natural Gas</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">JS</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">JNJ</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">QCOM</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">gold</div>
+                                </div>
+
+
+
+
+
+
+
+                            </div>
+
+
+                            <div class="dropdown-card5" id="dropdowncard5">
+
+
+                                <div class="dropdown-row" id="">
+                                    <span onclick="gamer(dropdowncard5)">
+                                        <i style='font-size:24px' class='fas'>&#xf104;</i>
+
+
+
+                                    </span>
+                                </div>
+
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#TEVA</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Gold </div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#CAT</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Silver</div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#GS</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Spot Grade</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#JNJ</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">UK spot oil</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#PG</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Natural Gas</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#BMWJ.DE</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">#BayGn.DE</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+
+                            <div class="dropdown-card6" id="dropdowncard6">
+
+
+                                <div class="dropdown-row" id="">
+                                    <span onclick="gamer(dropdowncard6)">
+                                        <i style='font-size:24px' class='fas'>&#xf104;</i>
+
+
+
+                                    </span>
+                                </div>
+
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">BTHCUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Gold </div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">ETHUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Silver</div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">LTCUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Spot Grade</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">AAEUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">UK spot oil</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">UNIUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Natural Gas</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">UEUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">SDUSD</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+
+                            <div class="dropdown-card7" id="dropdowncard7">
+
+
+                                <div class="dropdown-row" id="">
+                                    <span onclick="gamer(dropdowncard7)">
+                                        <i style='font-size:24px' class='fas'>&#xf104;</i>
+
+
+
+                                    </span>
+                                </div>
+
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">AAL</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Gold </div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">BLDP</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Silver</div>
+                                </div>
+
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">CCBG</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Spot Grade</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">churchill</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">UK spot oil</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">CMEGROUP</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Natural Gas</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">CENTCIMNOS</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+                                <div class="dropdown-row1">
+                                    <div class="dropdown-row2">
+                                        <span class="description">CentKimnos</span>
+                                        <button class="toggle-btn" onclick="toggleIcon(this)"><i
+                                                class="fas fa-plus"></i></button>
+                                    </div>
+                                    <div class="description1">Uk gold</div>
+                                </div>
+
+
+
+
+
+
+
+
+                            </div>
+
+
+
+
+                            <div id="searchh" class="searchbottom " style="background-color: wht;">
                                 <div style="background-color: white;" class="row header">
                                     <div class="col">
                                         <label class="mb-0 rightside">Symbol</label>
@@ -812,15 +1315,15 @@
                                         <label class="mb-0 rightside last-child">Spread</label>
                                     </div>
                                 </div>
-                                
-                                <!-- Content section for data rows -->
-                                <div style="background-color: white;" id="contentRows">
-                                    
+
+                                <div style="background-color:  white;height: 232px; overflow-y: scroll;"
+                                    id="contentRows">
+
                                 </div>
                             </div>
-                            
+
                         </div>
-                    </div>
+                    </div> 
 
                 </div>
                 <!-- TradingView Widget END -->
@@ -828,14 +1331,14 @@
 
 
                 <button style="background-color: blueviolet;"
-                    class="btn btn-secondary orders ms-1 btn btn-primary rounded-0 p-1  mb-2">Orders</button>
+                    class="btn btn-secondary  orders ms-1 btn btn-primary rounded-0 p-1  mb-2">Orders</button>
 
 
 
-                    <button style="background-color: blueviolet;display: none;"
+                <button style="background-color: blueviolet;display: none;"
                     class="btn btn-secondary orders ms-1 btn btn-primary history rounded-0 p-1  mb-2">History</button>
 
-              
+
 
 
 
@@ -884,7 +1387,7 @@
 
 
 
-                <div class="table-responsive2 col-12">
+                <div class="table-responsive2   col-12">
                     <table class="table border-0">
                         <thead>
                             <tr>
@@ -930,47 +1433,288 @@
                     </table>
                 </div>
 
+                <div id="trademobilepage" class="trademobilepage" style="padding: 1rem; font-size: 1rem;">
+
+                    <!-- Order with blue underline -->
+                    <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
+                        Order
+                    </div>
+                    <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
+
+                    <!-- Centered -1.64 EUR -->
+                    <div style="text-align: center; color: red; margin-bottom: 0.5rem;">
+                        -1.64 EUR
+                    </div>
+
+                    <!-- HR Line -->
+                    <hr style="margin-bottom: 0.5rem;" />
+
+                    <!-- Balance and Free -->
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                        <div>
+                            Balance:3574.19
+                        </div>
+                        <div>
+                            Free: 128373729
+                        </div>
+                    </div>
+
+                    <!-- Equity and Level -->
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                        <div>
+                            Equity: 20833133
+                        </div>
+                        <div>
+                            Level:823198931%
+                        </div>
+                    </div>
+
+                    <!-- Margin -->
+                    <div class="margin" style="margin-bottom: 0.5rem;margin-left:50px ;text-align:left;">
+                        Margin: 20
+                    </div>
+
+                    <!-- Positions with background color -->
+                    <div class="positions" style="background-color: #f2f2f2; padding: 0.5rem; margin-bottom: 0.5rem; ">
+                        Positions
+                    </div>
+
+                    <!-- EUR SD Sell and Value -->
+                    <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                        <div>
+                            EUR SD Sell
+                        </div>
+                        <div>
+                            31332332
+                        </div>
+                    </div>
+
+                    <!-- 1.05055 and 0.02 -->
+                    <div style="display: flex; justify-content: space-around;">
+                        <div>
+                            1.05055
+                        </div>
+                        <div>
+                            0.02
+                        </div>
+                    </div>
+
+                </div>
+
+
+
+                <div id="historymobilepage" class="historymobilepage">
+
+
+
+                    <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
+                        history
+                    </div>
+                    <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
+
+                    <!-- #hongkong50, 0.01, and sell 155804 -->
+
+                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
+                        <div
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div>
+
+                                <span style="font-weight: bold;"> #Hongkong50</span>
+                                <span>sell</span>
+                            </div>
+
+                            <div>
+                                155804
+                            </div>
+                            <div class="mt-4">1</div>
+
+
+                        </div>
+
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                21211312 at 322113
+                            </div>
+                            <div>
+                                200232122 21.322
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
+                        <div
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div>
+
+                                <span style="font-weight: bold;"> #Hongkong50</span>
+                                <span>sell</span>
+                            </div>
+
+                            <div>
+                                155804
+                            </div>
+                            <div class="mt-4">1</div>
+
+
+                        </div>
+
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                21211312 at 322113
+                            </div>
+                            <div>
+                                200232122 21.322
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
+                        <div
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div>
+
+                                <span style="font-weight: bold;"> #Hongkong50</span>
+                                <span>sell</span>
+                            </div>
+
+                            <div>
+                                155804
+                            </div>
+                            <div class="mt-4">1</div>
+
+
+                        </div>
+
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                21211312 at 322113
+                            </div>
+                            <div>
+                                200232122 21.322
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
+                        <div
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div>
+
+                                <span style="font-weight: bold;"> #Hongkong50</span>
+                                <span>sell</span>
+                            </div>
+
+                            <div>
+                                155804
+                            </div>
+                            <div class="mt-4">1</div>
+
+
+                        </div>
+
+                        <div style="display: flex; justify-content: space-evenly;">
+                            <div>
+                                21211312 at 322113
+                            </div>
+                            <div>
+                                200232122 21.322
+                            </div>
+                            <div></div>
+                        </div>
+
+                    </div>
+
+
+                </div>
 
 
 
 
+
+
+
+
+            
+
+
+                <div class="container d-lg-none">
+
+                    <div class=" endsection row ms-2">
+                        <div class="col-2">
+    
+                            <div class="">
+                                <svg onclick="toggleCardformobile()" width="24" height="24" viewBox="0 0 24 24"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
+                                    <path fill="blue" fill-rule="evenodd" clip-rule="evenodd"
+                                        d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-1 2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12Z">
+                                    </path>
+                                </svg>
+                            </div>
+                            Quotes
+                        </div>
+                        <div class="col-2">
+                            <div class="">
+                                <svg onclick="togglewidgetonmobile()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
+                                    width="28" height="28" fill="currentColor">
+                                    <path
+                                        d="M17 11v6h3v-6h-3zm-.5-1h4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z">
+                                    </path>
+                                    <path d="M18 7h1v3.5h-1zm0 10.5h1V21h-1z"></path>
+                                    <path
+                                        d="M9 8v12h3V8H9zm-.5-1h4a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5z">
+                                    </path>
+                                    <path d="M10 4h1v3.5h-1zm0 16.5h1V24h-1z"></path>
+                                </svg>
+                            </div>
+    
+    
+    
+    
+                            Chart
+                        </div>
+                        <div class="col-2 ">
+                            <div class="">
+                                <i onclick="trademobilepages()" class="fas fa-bars"></i>
+    
+                            </div>
+                            Trade
+                        </div>
+                        <div class="col-2">
+    
+                            <div class="">
+                                <i onclick="historymobilepages()" class="fas fa-history"></i>
+                            </div>
+                            History
+                        </div>
+                        <div class="col-2">
+                            <div class="">
+                                <i onclick="detailscardformobile()" class="fas fa-cog"></i>
+                            </div>
+    
+                            setting
+                        </div>
+                    </div>
+                </div>
 
             </main>
+
+
+
+
+
+
+
+
 
         </div>
     </div>
 
-    <!-- <script>
-        $(document).ready(function() {
-        $('.search-input').on('click', function() {
-            $('#dropdownCard').toggle();
-        });
-    
-        // Hide dropdown card when clicking outside of it
-        $(document).on('click', function(event) {
-            if (!$(event.target).closest('.search-form').length) {
-                $('#dropdownCard').hide();
-            }
-        });
-    });
 
-
-    $(document).ready(function() {
-        $('.word').on('click', function() {
-            $('#dropdownCard2').toggle();
-        });
-    
-        // Hide dropdown card when clicking outside of it
-        $(document).on('click', function(event) {
-            if (!$(event.target).closest('.search-form').length) {
-                $('#dropdownCard2').hide();
-            }
-        });
-    });
-
-
-
-    </script> -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"></script>
 
 
@@ -1004,49 +1748,158 @@
 
             }
         }
-        const dropdownCard3 = document.getElementById('dropdowncard2');
-
-        function gamer() {
-            console.log('comed here')
-            const dropdowncard=document.getElementById('dropdownCard')
-            dropdownCard.style.display = 'block';
-            dropdownCard3.style.display = 'none';
-            serach
-            drop
-        }
-
-
-
-        function toggleIcon(btn) {
-            const icon = btn.querySelector('i');
-
-            if (icon.classList.contains('fa-plus')) {
-                icon.classList.remove('fa-plus');
-                icon.classList.add('fa-check');
+        function showThirdDropdown(event) {
+            event.preventDefault();
+            const secondDropdown = document.getElementById('dropdowncard3');
+            if (secondDropdown.style.display === 'none' || !secondDropdown.style.display) {
+                secondDropdown.style.display = 'block';
+                dropdownCard.style.display = 'none';
+                // searchh.style.display='none';
+                console.log('comes here')
             } else {
-                icon.classList.remove('fa-check');
-                icon.classList.add('fa-plus');
+                secondDropdown.style.display = 'none';
+                const dropdowncard = document.getElementById('dropdownCard');
+                // dropdownCard.style.display='block';
+                // searchh.style.display='block';
+
+                console.log('comes here none')
+
+            }
+        }
+        function showFourthDropdown(event) {
+            event.preventDefault();
+            const secondDropdown = document.getElementById('dropdowncard4');
+            if (secondDropdown.style.display === 'none' || !secondDropdown.style.display) {
+                secondDropdown.style.display = 'block';
+                dropdownCard.style.display = 'none';
+                // searchh.style.display='none';
+                console.log('comes here')
+            } else {
+                secondDropdown.style.display = 'none';
+                const dropdowncard = document.getElementById('dropdownCard');
+                // dropdownCard.style.display='block';
+                // searchh.style.display='block';
+
+                console.log('comes here none')
+
             }
         }
 
+
+
+
+        function showFifthDropdown(event) {
+            event.preventDefault();
+            const secondDropdown = document.getElementById('dropdowncard5');
+            if (secondDropdown.style.display === 'none' || !secondDropdown.style.display) {
+                secondDropdown.style.display = 'block';
+                dropdownCard.style.display = 'none';
+                // searchh.style.display='none';
+                console.log('comes here')
+            } else {
+                secondDropdown.style.display = 'none';
+                const dropdowncard = document.getElementById('dropdownCard');
+                // dropdownCard.style.display='block';
+                // searchh.style.display='block';
+
+                console.log('comes here none')
+
+            }
+        }
+
+
+
+
+
+        function showSixthDropdown(event) {
+            event.preventDefault();
+            const secondDropdown = document.getElementById('dropdowncard6');
+            if (secondDropdown.style.display === 'none' || !secondDropdown.style.display) {
+                secondDropdown.style.display = 'block';
+                dropdownCard.style.display = 'none';
+                // searchh.style.display='none';
+                console.log('comes here')
+            } else {
+                secondDropdown.style.display = 'none';
+                const dropdowncard = document.getElementById('dropdownCard');
+                // dropdownCard.style.display='block';
+                // searchh.style.display='block';
+
+                console.log('comes here none')
+
+            }
+        }
+
+        function showSeventhDropdown(event) {
+            event.preventDefault();
+            const secondDropdown = document.getElementById('dropdowncard7');
+            if (secondDropdown.style.display === 'none' || !secondDropdown.style.display) {
+                secondDropdown.style.display = 'block';
+                dropdownCard.style.display = 'none';
+                // searchh.style.display='none';
+                console.log('comes here')
+            } else {
+                secondDropdown.style.display = 'none';
+                const dropdowncard = document.getElementById('dropdownCard');
+                // dropdownCard.style.display='block';
+                // searchh.style.display='block';
+
+                console.log('comes here none')
+
+            }
+        }
+
+
+
+
+
+
+
+
+        const dropdownCard3 = document.getElementById('dropdowncard2');
+
+        function gamer(x) {
+            console.log('comed here')
+            const dropdowncard = document.getElementById('dropdownCard')
+            dropdownCard.style.display = 'block';
+            x.style.display = 'none';
+
+        }
+
+
+
+
+
+
+
         function toggleFullScreen() {
-    const container = document.getElementById('headdd');
+            const container = document.getElementById('headdd');
 
-    if (!document.fullscreenElement) {
-        container.requestFullscreen().then(() => {
-            // Reinitialize the widget after entering fullscreen
-            createTradingViewWidget('light');
-        }).catch(err => {
-            alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
-        });
-    } else {
-        document.exitFullscreen();
-    }
-}
-
-
+            if (!document.fullscreenElement) {
+                container.requestFullscreen().then(() => {
+                    // Reinitialize the widget after entering fullscreen
+                    createTradingViewWidget('light');
+                }).catch(err => {
+                    alert(`Error attempting to enable full-screen mode: ${err.message} (${err.name})`);
+                });
+            } else {
+                document.exitFullscreen();
+            }
+        }
 
 
+
+
+
+
+        function togglecard() {
+            const card = document.getElementById('detailsCard');
+            if (card.style.display === 'none' || card.style.display === '') {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        }
 
 
         function togglecard() {
@@ -1128,8 +1981,13 @@
 
         document.querySelector(".clickedcross").addEventListener("click", function () {
             var dropdown = document.querySelector(".head111");
-            dropdown.style.display = "none"; // directly hide the dropdown
+            dropdown.style.display = "none";
         });
+
+
+
+
+
     </script>
 
 
@@ -1148,6 +2006,9 @@
 
             }
         });
+
+
+
 
 
         document.addEventListener('DOMContentLoaded', function () {
@@ -1186,20 +2047,22 @@
             closeIcon.addEventListener('click', function () {
                 dropdownCard.style.display = 'none';
                 dropdownCard2.style.display = "none";
+                dropdowncard3.style.display = "none";
+                dropdowncard4.style.display = "none";
+                dropdowncard5.style.display = "none";
+                dropdowncard6.style.display = "none";
+                dropdowncard7.style.display = "none";
+
+
                 searchInput.value = ''; // Clear the search input
             });
 
-          
+
         });
 
     </script>
 
     <script>
-     
-
-
-       
-              
 
 
 
@@ -1207,26 +2070,90 @@
 
 
 
-// second
-function toggleIcon(button) {
-    const icon = button.querySelector('i');
-    const descriptionText = button.closest('.dropdown-row1').querySelector('.description').textContent;
-    
-    if (icon.classList.contains('fa-plus')) {
-        icon.classList.remove('fa-plus');
-        icon.classList.add('fa-check');
-        appendDataRow(descriptionText);
-    } else {
-        icon.classList.remove('fa-check');
-        icon.classList.add('fa-plus');
-        removeDataRow(descriptionText);
-    }
-}
 
-function appendDataRow(description) {
-    const newRowHTML = `
+
+
+
+
+        function toggleIcon(button) {
+            const icon = button.querySelector('i');
+            const descriptionText = button.closest('.dropdown-row1').querySelector('.description').textContent;
+
+            if (icon.classList.contains('fa-plus')) {
+                icon.classList.remove('fa-plus');
+                icon.classList.add('fa-check');
+                appendDataRow(descriptionText);
+            } else {
+                icon.classList.remove('fa-check');
+                icon.classList.add('fa-plus');
+                removeDataRow(descriptionText);
+            }
+        }
+        function initializeIconState() {
+            const buttons = document.querySelectorAll('.toggle-btn');
+            buttons.forEach(button => {
+                const descriptionElement = button.closest('.dropdown-row1').querySelector('.description');
+
+                if (!descriptionElement) {
+                    console.error("Missing .description element for button:", button);
+                    return; // Skip to the next iteration of the loop
+                }
+
+                const descriptionText = descriptionElement.textContent;
+                const icon = button.querySelector('i');
+                console.log("Processing button for description:", descriptionText);
+
+                let storedDescriptions = localStorage.getItem('description');
+                storedDescriptions = storedDescriptions ? JSON.parse(storedDescriptions) : [];
+
+                if (storedDescriptions.includes(descriptionText)) {
+                    icon.classList.remove('fa-plus');
+                    icon.classList.add('fa-check');
+                } else {
+                    icon.classList.remove('fa-check');
+                    icon.classList.add('fa-plus');
+                }
+            });
+        }
+
+
+
+
+
+        function removeDataRow(description) {
+            const rows = document.querySelectorAll('.row[data-description]');
+            for (const row of rows) {
+                if (row.getAttribute('data-description') === description) {
+                    row.parentNode.removeChild(row);
+                    break;
+                }
+            }
+
+            let storedDescriptions = localStorage.getItem('description');
+            if (storedDescriptions) {
+                storedDescriptions = JSON.parse(storedDescriptions);
+                const index = storedDescriptions.indexOf(description);
+                if (index > -1) {
+                    storedDescriptions.splice(index, 1);
+                    localStorage.setItem('description', JSON.stringify(storedDescriptions));
+                }
+            }
+        }
+
+
+
+
+        function appendDataRow(description) {
+            let storedDescriptions = localStorage.getItem('description');
+            if (storedDescriptions) {
+                storedDescriptions = JSON.parse(storedDescriptions);
+            } else {
+                storedDescriptions = [];
+            }
+
+
+            const newRowHTML = `
         <div class="row" data-description="${description}">
-
             <div class="col">
                 <div class="content d-flex align-center justify-center">
                     <i style='font-size:24px;line-height: 1.7; height:100%' class='fas'>&#xf0de;</i>
@@ -1251,37 +2178,50 @@ function appendDataRow(description) {
         </div>
     `;
 
-    const contentRowsContainer = document.getElementById('contentRows');
-    contentRowsContainer.insertAdjacentHTML('beforeend', newRowHTML);
-}
+            const contentRowsContainer = document.getElementById('contentRows');
+            contentRowsContainer.insertAdjacentHTML('beforeend', newRowHTML);
+            if (!storedDescriptions.includes(description)) {
+                storedDescriptions.push(description);
+                localStorage.setItem('description', JSON.stringify(storedDescriptions));
+            }
 
-function removeDataRow(description) {
-    const contentRowsContainer = document.getElementById('contentRows');
-    const rows = contentRowsContainer.querySelectorAll('.row[data-description]');
-    rows.forEach(row => {
-        if (row.getAttribute('data-description') === description) {
-            contentRowsContainer.removeChild(row);
         }
-    });
-}
+
+        function displayStoredRows() {
+            let storedDescriptions = localStorage.getItem('description');
+            if (!storedDescriptions) return;
+
+            storedDescriptions = JSON.parse(storedDescriptions);
+
+            for (let desc of storedDescriptions) {
+                appendDataRow(desc);
+            }
+        }
 
 
 
-      
 
-function toggleCard() {
+        window.onload = function () {
+            displayStoredRows();
+            initializeIconState();
+        };
+
+
+
+
+        function toggleCard() {
             const card = document.getElementById('mainCard');
             const widgetContainer = document.querySelector('.tradingview-widget-container');
 
             if (card.style.display === 'none' || !card.style.display) {
                 card.style.display = 'block';
                 widgetContainer.classList.add('col-lg-8', 'col-md-12', 'col-sm-12');
-        widgetContainer.classList.remove('col-12');
+                widgetContainer.classList.remove('col-12');
 
             } else {
                 card.style.display = 'none';
                 widgetContainer.classList.remove('col-lg-8', 'col-md-12', 'col-sm-12');
-        widgetContainer.classList.add('col-12');
+                widgetContainer.classList.add('col-12');
 
             }
         }
@@ -1290,25 +2230,281 @@ function toggleCard() {
 
 
         function firstchart() {
-    // Show Orders table and hide History table
-    document.querySelector('.table-responsive').style.display = 'block';
-    document.querySelector('.table-responsive2').style.display = 'none';
-  
-    // Hide the History button
-    document.querySelector('.btn.btn-secondary.orders.ms-1').style.display = 'block';
-    document.querySelectorAll('.btn.btn-secondary.orders.ms-1')[1].style.display = 'none';
+            // Show Orders table and hide History table
+            document.querySelector('.table-responsive').style.display = 'block';
+            document.querySelector('.table-responsive2').style.display = 'none';
+
+            // Hide the History button
+            document.querySelector('.btn.btn-secondary.orders.ms-1').style.display = 'block';
+            document.querySelectorAll('.btn.btn-secondary.orders.ms-1')[1].style.display = 'none';
+        }
+
+        function secondchart() {
+            document.querySelector('.table-responsive').style.display = 'none';
+            document.querySelector('.table-responsive2').style.display = 'block';
+
+            document.querySelector('.btn.btn-secondary.orders.ms-1').style.display = 'none';
+            document.querySelectorAll('.btn.btn-secondary.orders.ms-1')[1].style.display = 'block';
+        }
+
+
+    </script>
+
+    <!-- For mobile -->
+
+
+
+    <script>
+
+
+        function navtoggle() {
+            const nav = document.getElementById('sidebar');
+            const mainContent = document.getElementById('mainContent');
+
+            if (nav.style.display === 'none' || nav.style.display === '') {
+                nav.style.display = 'block';
+                mainContent.classList.add('bordergiveparent');
+                mainContent.classList.remove('borderrevised');
+            } else {
+                nav.style.display = 'none';
+                mainContent.classList.remove('bordergiveparent');
+                mainContent.classList.add('borderrevised');
+            }
+
+
+
+            // firstcontent
+        }
+
+        function togglewidgetonmobile() {
+
+
+            const toggler = document.getElementById('widgetmobilescreen');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('historymobilepage');
+            const toggler3=document.getElementById('mainCard');
+            const toggler4= document.getElementById('detailsCard');
+            const nav = document.getElementById('sidebar');
+
+            const firstcontent = document.getElementById('firstcontent');
+
+            if (toggler.style.display === 'none' || '') {
+                toggler.style.display = 'block';
+
+                firstcontent.style.display = 'flex';
+
+
+                nav.style.display = 'block';
+
+                toggler1.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display='none';
+                toggler2.style.display = 'none';
+                toggler.classList.add('col-12','col-lg-12','col-md-12','col-sm-12');
+
+
+                toggler.classList.remove('col-lg-8','col-md-12','col-sm-12','col-12');
+
+
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+
+                toggler.classList.remove('col-12','col-lg-12','col-md-12','col-sm-12');
+                toggler.classList.add('col-lg-8','col-md-12','col-sm-12','col-12');
+
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+           
+
+
+
+
+        }
+
+
+
+        function trademobilepages() {
+
+            const toggler = document.getElementById('trademobilepage');
+            const toggler1 = document.getElementById('widgetmobilescreen');
+            const toggler2 = document.getElementById('historymobilepage');
+            const toggler3=document.getElementById('mainCard');
+            const toggler4= document.getElementById('detailsCard');
+            const nav = document.getElementById('sidebar');
+
+            const firstcontent=document.getElementById('firstcontent');
+
+
+
+            if (toggler.style.display === 'none' || '') {
+                toggler.style.display = 'block';
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display='none';
+                nav.style.display='none';
+
+                firstcontent.style.display='none';
+
+
+
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+
+        };
+
+        function historymobilepages() {
+
+            const toggler = document.getElementById('historymobilepage');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('widgetmobilescreen');
+            const toggler3=document.getElementById('mainCard');
+            const toggler4= document.getElementById('detailsCard');
+
+            const nav = document.getElementById('sidebar');
+            const firstcontent=document.getElementById('firstcontent');
+
+
+
+            if (toggler.style.display === 'none' || '') {
+                toggler.style.display = 'block';
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display='none';
+                nav.style.display = 'none';
+                firstcontent.style.display='none';
+
+
+
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+
+        };
+
+
+
+        function toggleCardformobile() {
+            const card = document.getElementById('mainCard');
+
+            const toggler = document.getElementById('historymobilepage');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('widgetmobilescreen');
+            const toggler3 = document.getElementById('detailsCard');
+            const nav = document.getElementById('sidebar');
+
+            const firstcontent=document.getElementById('firstcontent');
+
+
+
+
+            const widgetContainer = document.querySelector('.tradingview-widget-container');
+
+
+            // col-lg-4 col-md-8 col-sm-12 
+            if (card.style.display === 'none' || !card.style.display) {
+                card.style.display = 'block';
+
+                toggler.style.display = 'none';
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display='none';
+                nav.style.display = 'none';
+                firstcontent.style.display='none';
+
+
+
+
+
+
+
+                card.classList.add('col-lg-12', 'col-md-12', );
+                card.classList.remove('col-lg-4','col-md-8');
+
+            } else {
+                card.style.display = 'none';
+                
+
+            }
+        }
+
+
+        function detailscardformobile() {
+
+const toggler = document.getElementById('detailsCard');
+const toggler1 = document.getElementById('trademobilepage');
+const toggler2 = document.getElementById('widgetmobilescreen');
+const toggler3=document.getElementById('mainCard');
+const toggler4 = document.getElementById('historymobilepage');
+
+
+
+
+
+
+
+const nav = document.getElementById('sidebar');
+
+
+const firstcontent=document.getElementById('firstcontent');
+
+
+
+if (toggler.style.display === 'none' || '') {
+    toggler.style.display = 'block';
+
+    nav.style.display = 'none';
+    firstcontent.style.display = 'block';
+
+
+
+    toggler1.style.display = 'none';
+    toggler2.style.display = 'none';
+    toggler3.style.display = 'none';
+    toggler4.style.display = 'none';
+
 }
 
-function secondchart() {
-    document.querySelector('.table-responsive').style.display = 'none';
-    document.querySelector('.table-responsive2').style.display = 'block';
-  
-    document.querySelector('.btn.btn-secondary.orders.ms-1').style.display = 'none';
-    document.querySelectorAll('.btn.btn-secondary.orders.ms-1')[1].style.display = 'block';
+else {
+    toggler.style.display = 'none';
+    // mainContent.classList.remove('bordergiveparent');
+    // mainContent.classList.add('borderrevised');
 }
 
 
-     </script>
+
+};
+
+
+
+
+        
+
+
+
+    </script>
 
 
 
