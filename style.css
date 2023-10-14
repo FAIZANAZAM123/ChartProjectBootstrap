@@ -866,7 +866,7 @@ body.dark-mode #sidebar .sidebardown {
 .tradingview-widget-container,
 tradingview_c6b91 {
     overflow-x: scroll;
-    overflow-y: scroll;
+    /* overflow-y: scroll; */
 }
 
 i:hover{
