@@ -27,7 +27,7 @@ body {
 
 
 #sidebar {
-    min-height: 100vh;
+    min-height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: space-between !important;
@@ -36,6 +36,12 @@ body {
     border-right: 2px solid beige;
     background-color: white !important;
 }
+
+#widgetmobilescreen{
+    height: 80vh  !important;
+}
+
+
 
 #tradingview_c6b91 {
     min-height: 100px;
@@ -1036,7 +1042,7 @@ i:hover{
 }
 
 #mainCard{
-    height: 70vh !important;
+    height: 80vh !important;
 }
 
 
