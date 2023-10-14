@@ -418,6 +418,7 @@ input {
 
 #detailsCard {
     margin-left: 10px !important;
+    height: 280px !important;
 }
 
 .profile {
@@ -425,6 +426,7 @@ input {
     border-bottom: 1px solid black;
 
 }
+
 
 .drop li {
     margin-top: 15px !important;
@@ -718,7 +720,6 @@ button.buy {
 
 body.dark-mode *,
 body.dark-mode,
-body.dark-mode svg,
 body.dark-mode .card,
 body.dark-mode .search-form,
 body.dark-mode .dropdown-card,
@@ -727,10 +728,7 @@ body.dark-mode .dropdown-row,
 body.dark-mode .dropdown-row1,
 body.dark-mode .dropdown-row2,
 body.dark-mode .searchbottom,
-body.dark-mode i,
-body.dark-mode .fa,
-body.dark-mode [class^='fa-'],
-body.dark-mode [class*=' fa-'],
+
 body.dark-mode #sidebar,
 body.dark-mode #sidebar .firstlogo,
 body.dark-mode #sidebar .nav-item,
@@ -741,14 +739,14 @@ body.dark-mode #sidebar .sidebardown {
     color: #D1D1D2 !important;
     margin: 0;
     padding: 0;
-    white-space: normal !important;
+    /* white-space: normal !important; */
 
     .uuuuuuuu {
         fill: #D1D1D2 !important;
     }
 
     .uu1 {
-        fill: blue !important
+        fill:blue !important
     }
 
     .buy {
@@ -769,6 +767,38 @@ body.dark-mode #sidebar .sidebardown {
     .gameee {
         background-color: #1f1f1f !important;
     }
+    .outers{
+        background-color: white !important;
+    }
+
+    .speciala{
+        width:24px !important;
+    }
+
+    .boldtext{
+        color: white !important;
+    }
+    .boldblue{
+        color: blue !important;
+        text-decoration-line: underline !important;
+    }
+    .smtext{
+        color: red !important;
+    }
+
+    i:hover{
+        color: blue !important;
+    }
+    .i{
+
+        fill: blue !important;
+    }
+
+    .togivered{
+
+        color: red !important;
+    }
+
 }
 
 /* 
@@ -831,6 +861,13 @@ body.dark-mode #sidebar .sidebardown {
 tradingview_c6b91 {
     overflow-x: scroll;
     overflow-y: scroll;
+}
+
+i:hover{
+    color: blue !important;
+}
+.i:hover{
+    color: blue !important;
 }
 
 
@@ -978,17 +1015,7 @@ tradingview_c6b91 {
     }
 
     /* Mobile view */
-    @media (max-width: 767px) {
 
-
-
-        .endsection {
-            display: block;
-        }
-
-
-
-    }
 
 
     /* formobile */
@@ -1006,6 +1033,10 @@ tradingview_c6b91 {
 
 
 
+}
+
+#mainCard{
+    height: 70vh !important;
 }
 
 
@@ -1036,7 +1067,7 @@ tradingview_c6b91 {
     #toleftnavbartoggle {
         position: absolute;
         left: 1%;
-         top:3.9%;/* To vertically center the button */
+         top:4.3%;/* To vertically center the button */
         transform: translateY(-50%); /* Adjusts the positioning to make it truly centered vertically */
         background-color: white;
         
@@ -1056,6 +1087,7 @@ width: 100% !important ;
 
     #mainCard{
         display: none;
+        
     
     }
 
@@ -1074,6 +1106,21 @@ width: 100% !important ;
     main{
         height: 30vh !important;
     }
+
+
+    .firstrow{
+        display: flex ;
+        justify-content: space-between !important;
+    }
+
+
+    .alertbutton{
+        height: 70px !important;
+    }
+
+
+
+
     
   
 
@@ -1104,6 +1151,8 @@ width: 100% !important ;
     top: 90%;
     align-items: end;
     position: fixed;
+
+    /* margin-left: -10px !important; */
 }
 
 i{
@@ -1134,6 +1183,42 @@ i{
 .historymobilepage{
     display: none;
 }
+
+
+.mobile-alert {
+    
+    width: 80%; 
+    height: 300px;
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
+    position: fixed; 
+    top: 0%; 
+    left: 10%; 
+    z-index: 9999;
+    text-align: center;
+    border: 3px solid blue;
+}
+
+.mobile-alert .content {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 20px !important;
+
+}
+
+.mobile-alert .right {
+    margin-left: auto;
+}
+
+
+
+
+
+
+
 
 
 

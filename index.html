@@ -406,7 +406,7 @@
                             <i class="fas fa-bars "></i>
                         </button>
                         <li id="margingiving2" class="nav-item dropdown">
-                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            <a class="nav-link speciala dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
 
                                 <svg class="barsss" width="24" height="24" viewBox="0 0 24 24"
@@ -494,7 +494,7 @@
 
 
 
-                        <svg width="24" id="svgToggle" height="24" viewBox="0 0 24 24"
+                        <svg class="uu1" width="24" id="svgToggle" height="24" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <path class="uu1" fill-rule="evenodd" clip-rule="evenodd"
                                 d="M14.057 18.177c.786 0 1.369-.451 1.763-.934.391-.48.699-1.108.954-1.763.474-1.22.861-2.791 1.22-4.312l-2.258.828c-.26 1.04-.527 1.991-.826 2.759-.226.58-.443.982-.64 1.223-.121.15-.194.19-.219.199-.312-.003-.62-.16-.964-.895-.354-.757-.586-1.809-.842-3.019l-.026-.122c-.235-1.108-.497-2.35-.932-3.316-.454-1.009-1.261-2.06-2.715-2.06-1.21 0-2.038.943-2.57 1.82-.562.93-1.022 2.16-1.4 3.449l2.378-.83c.233-.624.478-1.16.734-1.583.472-.78.782-.856.858-.856.26 0 .55.124.891.88.343.763.568 1.818.825 3.033l.004.019c.241 1.138.515 2.43.984 3.433.48 1.025 1.317 2.047 2.781 2.047Zm-.016-1.998s.004-.002.01-.002l-.01.002Z">
@@ -712,7 +712,7 @@
                                 new TradingView.widget({
                                     "autosize": false,
                                     "width": "100%",
-                                    "height": "340",
+                                    // "height": "",
                                     "symbol": "NASDAQ:AAPL",
                                     "interval": "D",
                                     "timezone": "Etc/UTC",
@@ -1305,7 +1305,7 @@
                                     <div class="col">
                                         <label class="mb-0 rightside">Symbol</label>
                                     </div>
-                                    <div class="col text-center">
+                                    <div class="col  text-center">
                                         <label class="mb-0 rightside">Bid</label>
                                     </div>
                                     <div class="col text-center">
@@ -1323,7 +1323,7 @@
                             </div>
 
                         </div>
-                    </div> 
+                    </div>
 
                 </div>
                 <!-- TradingView Widget END -->
@@ -1437,13 +1437,13 @@
 
                     <!-- Order with blue underline -->
                     <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
-                        Order
+                        <span class="boldblue">Orders</span>
                     </div>
                     <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
 
                     <!-- Centered -1.64 EUR -->
-                    <div style="text-align: center; color: red; margin-bottom: 0.5rem;">
-                        -1.64 EUR
+                    <div class="togivered" style="text-align: center; color: red; margin-bottom: 0.5rem;">
+                        <span class="smtext">-1.64 EUR</span>
                     </div>
 
                     <!-- HR Line -->
@@ -1451,28 +1451,39 @@
 
                     <!-- Balance and Free -->
                     <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
-                        <div>
-                            Balance:3574.19
+                        <div class="towhite">
+                                       
+                            
+                        <span class="boldtext"> Balance:3574.19</span>
+                            
                         </div>
-                        <div>
-                            Free: 128373729
+                        <div class="towhite">
+                            <span class="boldtext">                            Free: 128373729
+                            </span>
                         </div>
                     </div>
 
                     <!-- Equity and Level -->
                     <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
-                        <div>
-                            Equity: 20833133
+                        <div  class="towhite">
+
+                            <span class="boldtext">                            Equity: 20833133
+                            </span>
                         </div>
-                        <div>
-                            Level:823198931%
+                        <div  class="towhite">
+                            <span class="boldtext">                            Level:823198931%
+                            </span>
                         </div>
                     </div>
 
                     <!-- Margin -->
-                    <div class="margin" style="margin-bottom: 0.5rem;margin-left:50px ;text-align:left;">
-                        Margin: 20
+                    
+                    <div  class="margin towhite" style="margin-bottom: 0.5rem;margin-left:50px ;text-align:left;">
+
+                        <span class="boldtext">                        Margin: 20
+                        </span>
                     </div>
+
 
                     <!-- Positions with background color -->
                     <div class="positions" style="background-color: #f2f2f2; padding: 0.5rem; margin-bottom: 0.5rem; ">
@@ -1481,21 +1492,25 @@
 
                     <!-- EUR SD Sell and Value -->
                     <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
-                        <div>
-                            EUR SD Sell
+                        <div  class="towhite">
+                            <span class="boldtext">EUR SD</span> <span class="smtext">sell</span>
                         </div>
-                        <div>
-                            31332332
+                        <div  class="towhite">
+
+                            <span class="boldtext">                            31332332
+                            </span>
                         </div>
                     </div>
 
                     <!-- 1.05055 and 0.02 -->
                     <div style="display: flex; justify-content: space-around;">
-                        <div>
-                            1.05055
+                        <div  class="towhite">
+
+                            <span class="boldtext">                            1.05055
+                            </span>
                         </div>
-                        <div>
-                            0.02
+                        <div  class="towhite">
+                        <span class="boldtext">0.02</span>
                         </div>
                     </div>
 
@@ -1508,7 +1523,7 @@
 
 
                     <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
-                        history
+                        <span class="boldblue" >History</span>
                     </div>
                     <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
 
@@ -1519,11 +1534,11 @@
                             style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
                             <div>
 
-                                <span style="font-weight: bold;"> #Hongkong50</span>
-                                <span>sell</span>
+                                <span class="boldtext" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext">sell</span>
                             </div>
 
-                            <div>
+                            <div class="boldtext">
                                 155804
                             </div>
                             <div class="mt-4">1</div>
@@ -1532,10 +1547,10 @@
                         </div>
 
                         <div style="display: flex; justify-content: space-evenly;">
-                            <div>
+                            <div class="boldtext">
                                 21211312 at 322113
                             </div>
-                            <div>
+                            <div class="boldtext">
                                 200232122 21.322
                             </div>
                             <div></div>
@@ -1548,11 +1563,11 @@
                             style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
                             <div>
 
-                                <span style="font-weight: bold;"> #Hongkong50</span>
-                                <span>sell</span>
+                                <span class="boldtext" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext">sell</span>
                             </div>
 
-                            <div>
+                            <div class="boldtext">
                                 155804
                             </div>
                             <div class="mt-4">1</div>
@@ -1561,10 +1576,10 @@
                         </div>
 
                         <div style="display: flex; justify-content: space-evenly;">
-                            <div>
+                            <div class="boldtext">
                                 21211312 at 322113
                             </div>
-                            <div>
+                            <div class="boldtext">
                                 200232122 21.322
                             </div>
                             <div></div>
@@ -1576,12 +1591,12 @@
                             style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
                             <div>
 
-                                <span style="font-weight: bold;"> #Hongkong50</span>
-                                <span>sell</span>
+                                <span class="boldtext" style="font-weight: bold;"> #DIS.N</span>
+                                <span class="smtext">sell</span>
                             </div>
 
-                            <div>
-                                155804
+                            <div class="boldtext">
+                                1552204
                             </div>
                             <div class="mt-4">1</div>
 
@@ -1589,12 +1604,11 @@
                         </div>
 
                         <div style="display: flex; justify-content: space-evenly;">
-                            <div>
-                                21211312 at 322113
+                            <div class="boldtext">
+                                40902211312 at 43424233
                             </div>
-                            <div>
-                                200232122 21.322
-                            </div>
+                            <div class="boldtext">
+                                42342423 242343242 </div>
                             <div></div>
                         </div>
 
@@ -1604,12 +1618,13 @@
                             style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
                             <div>
 
-                                <span style="font-weight: bold;"> #Hongkong50</span>
-                                <span>sell</span>
+                              
+                                <span class="boldtext" style="font-weight: bold;"> #AA</span>
+                                <span class="smtext">sell</span>
                             </div>
 
-                            <div>
-                                155804
+                            <div class="boldtext">
+                                1551111
                             </div>
                             <div class="mt-4">1</div>
 
@@ -1617,11 +1632,11 @@
                         </div>
 
                         <div style="display: flex; justify-content: space-evenly;">
-                            <div>
-                                21211312 at 322113
+                            <div class="boldtext">
+                                231323 at 234424234
                             </div>
-                            <div>
-                                200232122 21.322
+                            <div class="boldtext">
+                                742328.32243
                             </div>
                             <div></div>
                         </div>
@@ -1638,16 +1653,16 @@
 
 
 
-            
+
 
 
                 <div class="container d-lg-none">
 
                     <div id="endsection" class=" endsection row ms-2">
                         <div class="col-2">
-    
+
                             <div class="">
-                                <svg onclick="toggleCardformobile()" width="24" height="24" viewBox="0 0 24 24"
+                                <svg class="i" onclick="toggleCardformobile()" width="24" height="24" viewBox="0 0 24 24"
                                     xmlns="http://www.w3.org/2000/svg">
                                     <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
                                     <path fill="blue" fill-rule="evenodd" clip-rule="evenodd"
@@ -1658,34 +1673,34 @@
                             Quotes
                         </div>
                         <div class="col-2">
-                            <div class="">
-                                <svg onclick="togglewidgetonmobile()" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 28 28"
-                                    width="28" height="28" fill="currentColor">
-                                    <path
+                            <div >
+                                <svg   onclick="togglewidgetonmobile()" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 28 28" width="28" height="28" fill="currentColor">
+                                    <path class="i"
                                         d="M17 11v6h3v-6h-3zm-.5-1h4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z">
                                     </path>
-                                    <path d="M18 7h1v3.5h-1zm0 10.5h1V21h-1z"></path>
-                                    <path
+                                    <path class="i" d="M18 7h1v3.5h-1zm0 10.5h1V21h-1z"></path>
+                                    <path class="i"
                                         d="M9 8v12h3V8H9zm-.5-1h4a.5.5 0 0 1 .5.5v13a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-13a.5.5 0 0 1 .5-.5z">
                                     </path>
-                                    <path d="M10 4h1v3.5h-1zm0 16.5h1V24h-1z"></path>
+                                    <path class="i" d="M10 4h1v3.5h-1zm0 16.5h1V24h-1z"></path>
                                 </svg>
                             </div>
-    
-    
-    
-    
+
+
+
+
                             Chart
                         </div>
                         <div class="col-2 ">
                             <div class="">
                                 <i onclick="trademobilepages()" class="fas fa-bars"></i>
-    
+
                             </div>
                             Trade
                         </div>
                         <div class="col-2">
-    
+
                             <div class="">
                                 <i onclick="historymobilepages()" class="fas fa-history"></i>
                             </div>
@@ -1695,11 +1710,43 @@
                             <div class="">
                                 <i onclick="detailscardformobile()" class="fas fa-cog"></i>
                             </div>
-    
+
                             setting
                         </div>
                     </div>
                 </div>
+
+
+
+                <div id="customAlert" class=" d-lg-none mobile-alert">
+                    <p>Welcome to Euro Borse Group Webtrader</p>
+                    <div class="content">
+                        <span>Name</span>
+                        <span class="right">test</span>
+                    </div>
+                    <div class="content">
+                        <span>Server</span>
+                        <span class="right">Live</span>
+                    </div>
+                    <div class="content">
+                        <span>Login</span>
+                        <span class="right">80000306</span>
+                    </div>
+                    <div class="content">
+                        <span>Password</span>
+                        <span class="right">abc123</span>
+                    </div>
+
+                    <div class="text-center alertbutton   ">
+                        <button class="w-75  mt-2 btn btn-primary h-50  text-light" onclick="closeAlert()">Close
+                            Message</button>
+
+
+                    </div>
+
+                </div>
+
+
 
             </main>
 
@@ -1766,6 +1813,9 @@
 
             }
         }
+
+
+
         function showFourthDropdown(event) {
             event.preventDefault();
             const secondDropdown = document.getElementById('dropdowncard4');
@@ -1999,11 +2049,12 @@
             if (document.body.classList.contains('dark-mode')) {
                 document.body.classList.remove('dark-mode');
                 createTradingViewWidget('light');
+                localStorage.setItem('theme', 'light');
 
             } else {
                 document.body.classList.add('dark-mode');
                 createTradingViewWidget('dark');
-
+                localStorage.setItem('theme', 'dark');
             }
         });
 
@@ -2160,8 +2211,8 @@
                     <p class="selectedDescriptions mb-0 fromleft">${description}</p>
                 </div>
             </div>
-            <div class="col text-center">
-                <div class="content">
+            <div class="col bidding  text-center">
+                <div class="content bid  ">
                     <p class="mb-0">0</p>
                 </div>
             </div>
@@ -2255,6 +2306,7 @@
 
 
     <script>
+        // Get all the bidding elements
 
 
 
@@ -2266,25 +2318,27 @@
 
 
 
-            const endsection=document.getElementById('endsection');
 
-            endsection.style.width='85%';
 
 
 
             if (nav.style.display === 'none' || nav.style.display === '') {
+
+
+
+
+                const endsection = document.getElementById('endsection');
+
+                endsection.style.width = '82%';
                 nav.style.display = 'block';
                 mainContent.classList.add('bordergiveparent');
-                endsection.style.width='88%';
-
                 mainContent.classList.remove('borderrevised');
             } else {
                 nav.style.display = 'none';
                 mainContent.classList.remove('bordergiveparent');
                 mainContent.classList.add('borderrevised');
-                endsection.style.width='100%';
+                endsection.style.width = '100%';
 
-                
             }
 
 
@@ -2292,21 +2346,29 @@
             // firstcontent
         }
 
+
+        const endsection = document.getElementById('endsection');
+
+        endsection.style.width = '82%';
         function togglewidgetonmobile() {
 
 
             const toggler = document.getElementById('widgetmobilescreen');
             const toggler1 = document.getElementById('trademobilepage');
             const toggler2 = document.getElementById('historymobilepage');
-            const toggler3=document.getElementById('mainCard');
-            const toggler4= document.getElementById('detailsCard');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('detailsCard');
             const nav = document.getElementById('sidebar');
 
 
             const mainContent = document.getElementById('mainContent');
 
-    mainContent.classList.add('bordergiveparent');
-                mainContent.classList.remove('borderrevised');
+            mainContent.classList.add('bordergiveparent');
+            mainContent.classList.remove('borderrevised');
+
+            const endsection = document.getElementById('endsection');
+
+            endsection.style.width = '82%';
 
 
 
@@ -2324,12 +2386,12 @@
 
                 toggler1.style.display = 'none';
                 toggler3.style.display = 'none';
-                toggler4.style.display='none';
+                toggler4.style.display = 'none';
                 toggler2.style.display = 'none';
-                toggler.classList.add('col-12','col-lg-12','col-md-12','col-sm-12');
+                toggler.classList.add('col-12', 'col-lg-12', 'col-md-12', 'col-sm-12');
 
 
-                toggler.classList.remove('col-lg-8','col-md-12','col-sm-12','col-12');
+                toggler.classList.remove('col-lg-8', 'col-md-12', 'col-sm-12', 'col-12');
 
 
 
@@ -2338,15 +2400,15 @@
             else {
                 toggler.style.display = 'none';
 
-                toggler.classList.remove('col-12','col-lg-12','col-md-12','col-sm-12');
-                toggler.classList.add('col-lg-8','col-md-12','col-sm-12','col-12');
+                toggler.classList.remove('col-12', 'col-lg-12', 'col-md-12', 'col-sm-12');
+                toggler.classList.add('col-lg-8', 'col-md-12', 'col-sm-12', 'col-12');
 
                 // mainContent.classList.remove('bordergiveparent');
                 // mainContent.classList.add('borderrevised');
             }
 
 
-           
+
 
 
 
@@ -2360,33 +2422,33 @@
             const toggler = document.getElementById('trademobilepage');
             const toggler1 = document.getElementById('widgetmobilescreen');
             const toggler2 = document.getElementById('historymobilepage');
-            const toggler3=document.getElementById('mainCard');
-            const toggler4= document.getElementById('detailsCard');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('detailsCard');
             const nav = document.getElementById('sidebar');
 
-            const firstcontent=document.getElementById('firstcontent');
-
-            const endsection=document.getElementById('endsection');
-            endsection.style.width='100%';
-
-
-
-
+            const firstcontent = document.getElementById('firstcontent');
 
             const mainContent = document.getElementById('mainContent');
 
-mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.remove('bordergiveparent');
             mainContent.classList.add('borderrevised');
 
-            if (toggler.style.display === 'none' || '') {
+            const endsection = document.getElementById('endsection');
+
+            endsection.style.width = '100%';
+
+            firstcontent.style.display = 'none';
+
+
+            if (toggler.style.display === 'none' || !toggler.style.display) {
                 toggler.style.display = 'block';
                 toggler1.style.display = 'none';
                 toggler2.style.display = 'none';
                 toggler3.style.display = 'none';
-                toggler4.style.display='none';
-                nav.style.display='none';
+                toggler4.style.display = 'none';
+                nav.style.display = 'none';
 
-                firstcontent.style.display='none';
+                firstcontent.style.display = 'none';
 
 
 
@@ -2408,26 +2470,29 @@ mainContent.classList.remove('bordergiveparent');
             const toggler = document.getElementById('historymobilepage');
             const toggler1 = document.getElementById('trademobilepage');
             const toggler2 = document.getElementById('widgetmobilescreen');
-            const toggler3=document.getElementById('mainCard');
-            const toggler4= document.getElementById('detailsCard');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('detailsCard');
+
 
             const nav = document.getElementById('sidebar');
-            const firstcontent=document.getElementById('firstcontent');
-            const endsection=document.getElementById('endsection');
-            endsection.style.width='100%';
+            const firstcontent = document.getElementById('firstcontent');
+            firstcontent.style.display = 'none';
 
+            const endsection = document.getElementById('endsection');
+
+            endsection.style.width = '100%';
             const mainContent = document.getElementById('mainContent');
 
-mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.remove('bordergiveparent');
             mainContent.classList.add('borderrevised');
-            if (toggler.style.display === 'none' || '') {
+            if (toggler.style.display === 'none' || !toggler.style.display) {
                 toggler.style.display = 'block';
                 toggler1.style.display = 'none';
                 toggler2.style.display = 'none';
                 toggler3.style.display = 'none';
-                toggler4.style.display='none';
+                toggler4.style.display = 'none';
                 nav.style.display = 'none';
-                firstcontent.style.display='none';
+                firstcontent.style.display = 'none';
 
 
 
@@ -2455,28 +2520,31 @@ mainContent.classList.remove('bordergiveparent');
             const toggler3 = document.getElementById('detailsCard');
             const nav = document.getElementById('sidebar');
 
-            const firstcontent=document.getElementById('firstcontent');
+            const firstcontent = document.getElementById('firstcontent');
 
             const mainContent = document.getElementById('mainContent');
+            const endsection = document.getElementById('endsection');
 
-mainContent.classList.remove('bordergiveparent');
+            endsection.style.width = '100%';
+
+
+
+            mainContent.classList.remove('bordergiveparent');
             mainContent.classList.add('borderrevised');
 
-            const endsection=document.getElementById('endsection');
-            endsection.style.width='100%';
+
             const widgetContainer = document.querySelector('.tradingview-widget-container');
 
 
-            // col-lg-4 col-md-8 col-sm-12 
             if (card.style.display === 'none' || !card.style.display) {
                 card.style.display = 'block';
 
                 toggler.style.display = 'none';
                 toggler1.style.display = 'none';
                 toggler2.style.display = 'none';
-                toggler3.style.display='none';
+                toggler3.style.display = 'none';
                 nav.style.display = 'none';
-                firstcontent.style.display='none';
+                firstcontent.style.display = 'none';
 
 
 
@@ -2484,71 +2552,76 @@ mainContent.classList.remove('bordergiveparent');
 
 
 
-                card.classList.add('col-lg-12', 'col-md-12', );
-                card.classList.remove('col-lg-4','col-md-8');
+                card.classList.add('col-lg-12', 'col-md-12',);
+                card.classList.remove('col-lg-4', 'col-md-8');
 
             } else {
                 card.style.display = 'none';
-                
+
 
             }
+        }
+
+        function closeAlert() {
+            document.getElementById('customAlert').style.display = 'none';
         }
 
 
         function detailscardformobile() {
 
-const toggler = document.getElementById('detailsCard');
-const toggler1 = document.getElementById('trademobilepage');
-const toggler2 = document.getElementById('widgetmobilescreen');
-const toggler3=document.getElementById('mainCard');
-const toggler4 = document.getElementById('historymobilepage');
-const endsection=document.getElementById('endsection');
-            endsection.style.width='100%';
+            const toggler = document.getElementById('detailsCard');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('widgetmobilescreen');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('historymobilepage');
 
 
-const mainContent = document.getElementById('mainContent');
+            const endsection = document.getElementById('endsection');
 
-mainContent.classList.remove('bordergiveparent');
+            endsection.style.width = '100%';
+            const mainContent = document.getElementById('mainContent');
+
+            mainContent.classList.remove('bordergiveparent');
             mainContent.classList.add('borderrevised');
 
 
 
-const nav = document.getElementById('sidebar');
+            const nav = document.getElementById('sidebar');
 
 
-const firstcontent=document.getElementById('firstcontent');
-
-
-
-if (toggler.style.display === 'none' || '') {
-    toggler.style.display = 'block';
-
-    nav.style.display = 'none';
-
-    firstcontent.style.display = 'flex';
-
-
-    toggler1.style.display = 'none';
-    toggler2.style.display = 'none';
-    toggler3.style.display = 'none';
-    toggler4.style.display = 'none';
-
-}
-
-else {
-    toggler.style.display = 'none';
-    // mainContent.classList.remove('bordergiveparent');
-    // mainContent.classList.add('borderrevised');
-}
+            const firstcontent = document.getElementById('firstcontent');
 
 
 
-};
+            if (toggler.style.display === 'none' || !toggler.style.display) {
+                toggler.style.display = 'block';
+
+                nav.style.display = 'none';
+                firstcontent.style.display = 'block';
+
+
+
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display = 'none';
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+
+        };
 
 
 
 
-        
+
 
 
 
