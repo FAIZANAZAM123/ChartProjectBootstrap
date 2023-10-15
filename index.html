@@ -417,11 +417,15 @@
                             <i class="fas fa-bars fa-lg"></i>
                         </li>
 
-                        <button id="toleftnavbartoggle" style="background-color: white; border: none;"
+
+                        <li class=" rightline2 d-lg-none">       
+                         <button id="toleftnavbartoggle" class="" style="background-color: white; border: none;"
                             onclick="navtoggle()" class="d-lg-none">
-                            <i class="fas fa-bars "></i>
+                            <i class="fas fa-bars margintop "></i>
                         </button>
-                        <li id="margingiving2" class="nav-item dropdown">
+                    </li>
+
+                        <li id="margingiving2" class="nav-item dropdown rightline2 rightline">
                             <a class="nav-link speciala dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -465,7 +469,7 @@
                         <h5 class="tohide">W1</h5>
                         <h5 class="tohide">MN</h5>
 
-                        <li class="nav-item dropdown toshow speciali  ">
+                        <li class="nav-item dropdown toshow speciali rightline  ">
                             <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
                                 data-bs-toggle="dropdown" aria-expanded="false">
 
@@ -494,68 +498,70 @@
 
 
 
+                        <li class="rightline">
+                            <svg class="one1 " onclick="toggleDropdown()" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#DA5244"
+                                        d="M11.5 4v2.02C8.42 6.276 6 8.856 6 12c0 3.145 2.42 5.725 5.5 5.98V20H10c-4.418 0-8-3.582-8-8s3.582-8 8-8h1.5z">
+                                    </path>
+                                    <path fill="#3687ED"
+                                        d="M14 4c4.418 0 8 3.582 8 8s-3.582 8-8 8h-1.5v-2.02c3.08-.256 5.5-2.836 5.5-5.98 0-3.145-2.42-5.725-5.5-5.98V4H14z">
+                                    </path>
+                                    <path fill="#B0BEC5" d="M13 8v4.186l2.657 2.657-1.414 1.414L11 13V8z"></path>
+                                </g>
+                            </svg>
+                        </li>
 
-                        <svg class="one1" onclick="toggleDropdown()" width="24" height="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <path fill="#DA5244"
-                                    d="M11.5 4v2.02C8.42 6.276 6 8.856 6 12c0 3.145 2.42 5.725 5.5 5.98V20H10c-4.418 0-8-3.582-8-8s3.582-8 8-8h1.5z">
+                        <li class="rightline torigth">
+                            <svg style="display: none;" class="one2" onclick="toggledropdownmobile()" width="24"
+                                height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                                <g fill="none" fill-rule="evenodd">
+                                    <path fill="#DA5244"
+                                        d="M11.5 4v2.02C8.42 6.276 6 8.856 6 12c0 3.145 2.42 5.725 5.5 5.98V20H10c-4.418 0-8-3.582-8-8s3.582-8 8-8h1.5z">
+                                    </path>
+                                    <path fill="#3687ED"
+                                        d="M14 4c4.418 0 8 3.582 8 8s-3.582 8-8 8h-1.5v-2.02c3.08-.256 5.5-2.836 5.5-5.98 0-3.145-2.42-5.725-5.5-5.98V4H14z">
+                                    </path>
+                                    <path fill="#B0BEC5" d="M13 8v4.186l2.657 2.657-1.414 1.414L11 13V8z"></path>
+                                </g>
+                            </svg>
+
+
+                        </li>
+
+
+
+
+                        <li class="li">
+                            <svg class="uu1" width="24" id="svgToggle" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="uu1" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="M14.057 18.177c.786 0 1.369-.451 1.763-.934.391-.48.699-1.108.954-1.763.474-1.22.861-2.791 1.22-4.312l-2.258.828c-.26 1.04-.527 1.991-.826 2.759-.226.58-.443.982-.64 1.223-.121.15-.194.19-.219.199-.312-.003-.62-.16-.964-.895-.354-.757-.586-1.809-.842-3.019l-.026-.122c-.235-1.108-.497-2.35-.932-3.316-.454-1.009-1.261-2.06-2.715-2.06-1.21 0-2.038.943-2.57 1.82-.562.93-1.022 2.16-1.4 3.449l2.378-.83c.233-.624.478-1.16.734-1.583.472-.78.782-.856.858-.856.26 0 .55.124.891.88.343.763.568 1.818.825 3.033l.004.019c.241 1.138.515 2.43.984 3.433.48 1.025 1.317 2.047 2.781 2.047Zm-.016-1.998s.004-.002.01-.002l-.01.002Z">
                                 </path>
-                                <path fill="#3687ED"
-                                    d="M14 4c4.418 0 8 3.582 8 8s-3.582 8-8 8h-1.5v-2.02c3.08-.256 5.5-2.836 5.5-5.98 0-3.145-2.42-5.725-5.5-5.98V4H14z">
+                                <path class="uu1"
+                                    d="m5.752 15.75-2.187.763a94.295 94.295 0 0 0-.554 3.34 1 1 0 1 0 1.978.295c.183-1.226.434-2.799.763-4.397Z">
                                 </path>
-                                <path fill="#B0BEC5" d="M13 8v4.186l2.657 2.657-1.414 1.414L11 13V8z"></path>
-                            </g>
-                        </svg>
-
-
-                        <svg style="display: none;" class="one2" onclick="toggledropdownmobile()" width="24" height="24"
-                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-                            <g fill="none" fill-rule="evenodd">
-                                <path fill="#DA5244"
-                                    d="M11.5 4v2.02C8.42 6.276 6 8.856 6 12c0 3.145 2.42 5.725 5.5 5.98V20H10c-4.418 0-8-3.582-8-8s3.582-8 8-8h1.5z">
+                                <path class="uu1" fill-rule="evenodd" clip-rule="evenodd"
+                                    d="m16.845 7.46 2.353-.864.068-.191c.216-.585.422-.99.607-1.232A.784.784 0 0 1 20.038 5 1 1 0 0 0 20 3c-.791 0-1.354.485-1.717.96-.365.478-.653 1.102-.893 1.753-.194.526-.375 1.12-.546 1.746Zm3.211-2.47-.009.004c.006-.004.009-.004.009-.004Z">
                                 </path>
-                                <path fill="#3687ED"
-                                    d="M14 4c4.418 0 8 3.582 8 8s-3.582 8-8 8h-1.5v-2.02c3.08-.256 5.5-2.836 5.5-5.98 0-3.145-2.42-5.725-5.5-5.98V4H14z">
+                                <path class="uu1"
+                                    d="M21.942 7.664a1 1 0 0 1-.605 1.278l-7 2.5a1 1 0 0 1-.673-1.884l7-2.5a1 1 0 0 1 1.278.606ZM8.86 13.433a1 1 0 1 0-.719-1.866l-6.5 2.5a1 1 0 0 0 .718 1.866l6.5-2.5Z">
                                 </path>
-                                <path fill="#B0BEC5" d="M13 8v4.186l2.657 2.657-1.414 1.414L11 13V8z"></path>
-                            </g>
-                        </svg>
+                            </svg>
+
+                        </li>
+                        <li class="">
+                            <svg class="tohide" onclick="toggleCard()" width="24" height="24" viewBox="0 0 24 24"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
+                                <path fill="blue" fill-rule="evenodd" fill="blue" clip-rule="evenodd"
+                                    d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-1 2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12Z">
+                                </path>
+                            </svg>
 
 
-
-
-
-
-
-
-                        <svg class="uu1" width="24" id="svgToggle" height="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="uu1" fill-rule="evenodd" clip-rule="evenodd"
-                                d="M14.057 18.177c.786 0 1.369-.451 1.763-.934.391-.48.699-1.108.954-1.763.474-1.22.861-2.791 1.22-4.312l-2.258.828c-.26 1.04-.527 1.991-.826 2.759-.226.58-.443.982-.64 1.223-.121.15-.194.19-.219.199-.312-.003-.62-.16-.964-.895-.354-.757-.586-1.809-.842-3.019l-.026-.122c-.235-1.108-.497-2.35-.932-3.316-.454-1.009-1.261-2.06-2.715-2.06-1.21 0-2.038.943-2.57 1.82-.562.93-1.022 2.16-1.4 3.449l2.378-.83c.233-.624.478-1.16.734-1.583.472-.78.782-.856.858-.856.26 0 .55.124.891.88.343.763.568 1.818.825 3.033l.004.019c.241 1.138.515 2.43.984 3.433.48 1.025 1.317 2.047 2.781 2.047Zm-.016-1.998s.004-.002.01-.002l-.01.002Z">
-                            </path>
-                            <path class="uu1"
-                                d="m5.752 15.75-2.187.763a94.295 94.295 0 0 0-.554 3.34 1 1 0 1 0 1.978.295c.183-1.226.434-2.799.763-4.397Z">
-                            </path>
-                            <path class="uu1" fill-rule="evenodd" clip-rule="evenodd"
-                                d="m16.845 7.46 2.353-.864.068-.191c.216-.585.422-.99.607-1.232A.784.784 0 0 1 20.038 5 1 1 0 0 0 20 3c-.791 0-1.354.485-1.717.96-.365.478-.653 1.102-.893 1.753-.194.526-.375 1.12-.546 1.746Zm3.211-2.47-.009.004c.006-.004.009-.004.009-.004Z">
-                            </path>
-                            <path class="uu1"
-                                d="M21.942 7.664a1 1 0 0 1-.605 1.278l-7 2.5a1 1 0 0 1-.673-1.884l7-2.5a1 1 0 0 1 1.278.606ZM8.86 13.433a1 1 0 1 0-.719-1.866l-6.5 2.5a1 1 0 0 0 .718 1.866l6.5-2.5Z">
-                            </path>
-                        </svg>
-
-
-                        <svg class="tohide" onclick="toggleCard()" width="24" height="24" viewBox="0 0 24 24"
-                            xmlns="http://www.w3.org/2000/svg">
-                            <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
-                            <path fill="blue" fill-rule="evenodd" fill="blue" clip-rule="evenodd"
-                                d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-1 2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12Z">
-                            </path>
-                        </svg>
-
-
-
+                        </li>
 
                     </div>
 
@@ -1940,9 +1946,10 @@
                 <div id="isthisflex">
                     <div id="" style="display: none;" class=" d-flex">
                         <div style="height: 50px; text-align: left; color: blue; margin-bottom: 0.5rem;">
-                            <span onclick="ordermobilepagess()" style="height: 50px" class="boldtext tohover">Orders</span>
+                            <span onclick="ordermobilepagess()" style="height: 50px"
+                                class="boldtext tohover">Orders</span>
                         </div>
-                        
+
                         <div class="ms-3" style="text-align: left; color: blue; margin-bottom: 0.5rem;">
                             <span onclick="historymobilepages()" class="active boldtext tohover">History</span>
                             <!-- <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;">
@@ -2001,7 +2008,7 @@
 
                     </div>
 
-                    <div  class="box todark   bg-light arrow-left">
+                    <div class="box todark   bg-light arrow-left">
 
                         <div class=" todark px-2"
                             style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
@@ -2036,188 +2043,8 @@
 
                     </div>
 
-                    
-                    <div  class="box todark   bg-light arrow-left">
 
-                        <div class=" todark px-2"
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div class="todark">
-
-                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext todark">sell</span>
-                            </div>
-
-                            <div class="boldtext ms-5 todark">
-                                155804
-                            </div>
-                            <div class="mt-4 todark">1</div>
-
-
-                        </div>
-
-                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
-                            <div class="boldtext fw-lighter todark">
-                                <span class="todark" style="font-size: 14px;">
-                                    21211312 at 322113
-
-                                </span>
-                            </div>
-                            <div class="boldtext fw-lighter  toleft todark">
-
-                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
-                            </div>
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                    
-                    <div  class="box todark   bg-light arrow-left">
-
-                        <div class=" todark px-2"
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div class="todark">
-
-                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext todark">sell</span>
-                            </div>
-
-                            <div class="boldtext ms-5 todark">
-                                155804
-                            </div>
-                            <div class="mt-4 todark">1</div>
-
-
-                        </div>
-
-                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
-                            <div class="boldtext fw-lighter todark">
-                                <span class="todark" style="font-size: 14px;">
-                                    21211312 at 322113
-
-                                </span>
-                            </div>
-                            <div class="boldtext fw-lighter  toleft todark">
-
-                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
-                            </div>
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                    
-                    <div  class="box todark   bg-light arrow-left">
-
-                        <div class=" todark px-2"
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div class="todark">
-
-                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext todark">sell</span>
-                            </div>
-
-                            <div class="boldtext ms-5 todark">
-                                155804
-                            </div>
-                            <div class="mt-4 todark">1</div>
-
-
-                        </div>
-
-                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
-                            <div class="boldtext fw-lighter todark">
-                                <span class="todark" style="font-size: 14px;">
-                                    21211312 at 322113
-
-                                </span>
-                            </div>
-                            <div class="boldtext fw-lighter  toleft todark">
-
-                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
-                            </div>
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                    
-                    <div  class="box todark   bg-light arrow-left">
-
-                        <div class=" todark px-2"
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div class="todark">
-
-                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext todark">sell</span>
-                            </div>
-
-                            <div class="boldtext ms-5 todark">
-                                155804
-                            </div>
-                            <div class="mt-4 todark">1</div>
-
-
-                        </div>
-
-                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
-                            <div class="boldtext fw-lighter todark">
-                                <span class="todark" style="font-size: 14px;">
-                                    21211312 at 322113
-
-                                </span>
-                            </div>
-                            <div class="boldtext fw-lighter  toleft todark">
-
-                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
-                            </div>
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                    
-                    <div  class="box todark   bg-light arrow-left">
-
-                        <div class=" todark px-2"
-                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
-                            <div class="todark">
-
-                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext todark">sell</span>
-                            </div>
-
-                            <div class="boldtext ms-5 todark">
-                                155804
-                            </div>
-                            <div class="mt-4 todark">1</div>
-
-
-                        </div>
-
-                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
-                            <div class="boldtext fw-lighter todark">
-                                <span class="todark" style="font-size: 14px;">
-                                    21211312 at 322113
-
-                                </span>
-                            </div>
-                            <div class="boldtext fw-lighter  toleft todark">
-
-                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
-                            </div>
-                            <div></div>
-
-                        </div>
-
-                    </div>
-
-                    
-                    <div  class="box todark   bg-light arrow-left">
+                    <div class="box todark   bg-light arrow-left">
 
                         <div class=" todark px-2"
                             style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
@@ -2253,9 +2080,189 @@
                     </div>
 
 
+                    <div class="box todark   bg-light arrow-left">
+
+                        <div class=" todark px-2"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext ms-5 todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
 
 
-                   
+                        </div>
+
+                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
+                            <div class="boldtext fw-lighter todark">
+                                <span class="todark" style="font-size: 14px;">
+                                    21211312 at 322113
+
+                                </span>
+                            </div>
+                            <div class="boldtext fw-lighter  toleft todark">
+
+                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box todark   bg-light arrow-left">
+
+                        <div class=" todark px-2"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext ms-5 todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
+                            <div class="boldtext fw-lighter todark">
+                                <span class="todark" style="font-size: 14px;">
+                                    21211312 at 322113
+
+                                </span>
+                            </div>
+                            <div class="boldtext fw-lighter  toleft todark">
+
+                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box todark   bg-light arrow-left">
+
+                        <div class=" todark px-2"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext ms-5 todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
+                            <div class="boldtext fw-lighter todark">
+                                <span class="todark" style="font-size: 14px;">
+                                    21211312 at 322113
+
+                                </span>
+                            </div>
+                            <div class="boldtext fw-lighter  toleft todark">
+
+                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box todark   bg-light arrow-left">
+
+                        <div class=" todark px-2"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext ms-5 todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
+                            <div class="boldtext fw-lighter todark">
+                                <span class="todark" style="font-size: 14px;">
+                                    21211312 at 322113
+
+                                </span>
+                            </div>
+                            <div class="boldtext fw-lighter  toleft todark">
+
+                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box todark   bg-light arrow-left">
+
+                        <div class=" todark px-2"
+                            style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext ms-5 todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark px-2 fromdown  " style=" display: flex; justify-content: space-between;">
+                            <div class="boldtext fw-lighter todark">
+                                <span class="todark" style="font-size: 14px;">
+                                    21211312 at 322113
+
+                                </span>
+                            </div>
+                            <div class="boldtext fw-lighter  toleft todark">
+
+                                <span class=" ms-5 todark" style="font-size: 14px;">2022.222.2222.22</span>
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+
+
+
 
 
 

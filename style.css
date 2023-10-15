@@ -1137,18 +1137,26 @@ i:hover{
     }
     #margingiving2{
         margin-left: 90px !important;
+        
 
     }
     #toleftnavbartoggle {
         position: absolute;
-        left: 1%;
-         top:4.3%;/* To vertically center the button */
+        left: -2%;
+         top:2.3%;
         transform: translateY(-50%); /* Adjusts the positioning to make it truly centered vertically */
         background-color: white;
+width: 10% !important;
+height: 44px !important;
+        border: 1px solid #e5e5e5 !important;
+        border-top: none !important;
+        border-left: none !important;
         
         z-index: 1000; /* This ensures the button stays on top of other content */
     }
-
+.margintop{
+    margin-top: 10px !important;
+}
 
 
     #detailsCard {
@@ -1508,14 +1516,66 @@ margin-top: 5px !important;
 
 
 
+.border-right{
+    border-right: 1px solid black !important;
+}
+
+
+.rightline {
+    /* padding-right: 10px !important;  adjust as needed for the desired space */
+    border-right: 1px solid #000;  /* adjust for desired border thickness and color */
+    /* box-sizing: border-box;  ensures the border and padding don't increase the total width */
+}
+rightline1{
+    border-right: 1px solid #000; 
+    /* box-sizing: border-box;  */
+
+    /* padding-left: 10px !important; */
+}
+
+.torigth{
+
+    /* padding-left: 20px !important; */
+}
+
+
+li{
+    list-style: none;
+}
+
+
+
+.rightline2{
+    border-right: 1px solid black !important;
+
+    padding-left: 10px !important;
+
+}
 
 
 
 
 
+@media (max-width:579px) {
+
+    #toleftnavbartoggle
+    {
+        width: 16.5% !important;
+        left:-4% !important;
+    }
+
+    
+    
+}
 
 
+@media (min-width: 467px) and (max-width: 579px) {
+    #margingiving2{
+        margin-left: 120px !important;
+        
 
+    }
+}
 
 
 
