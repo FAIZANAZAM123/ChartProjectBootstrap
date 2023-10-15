@@ -1522,7 +1522,7 @@ margin-top: 5px !important;
 
 
 .rightline {
-    /* padding-right: 10px !important;  adjust as needed for the desired space */
+    padding-right: 10px !important;  adjust as needed for the desired space
     border-right: 1px solid #000;  /* adjust for desired border thickness and color */
     /* box-sizing: border-box;  ensures the border and padding don't increase the total width */
 }
@@ -1530,17 +1530,17 @@ rightline1{
     border-right: 1px solid #000; 
     /* box-sizing: border-box;  */
 
-    /* padding-left: 10px !important; */
+    padding-left: 10px !important;
 }
 
 .torigth{
 
-    /* padding-left: 20px !important; */
+    padding-left: 20px !important;
 }
 
 
 li{
-    list-style: none;
+    list-style: none !important;
 }
 
 
