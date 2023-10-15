@@ -1522,8 +1522,8 @@ margin-top: 5px !important;
 
 
 .rightline {
-    padding-right: 10px !important;  adjust as needed for the desired space
-    border-right: 1px solid #000;  /* adjust for desired border thickness and color */
+    padding-right: 10px !important; 
+    border-right: 1px solid #000; 
     /* box-sizing: border-box;  ensures the border and padding don't increase the total width */
 }
 rightline1{
@@ -1539,9 +1539,6 @@ rightline1{
 }
 
 
-li{
-    list-style: none !important;
-}
 
 
 
@@ -1581,4 +1578,14 @@ li{
 
 
 
+
+
+
+
+
+li{
+
+    list-style-type: none !important;
+    list-style: none !important;
+}
 
