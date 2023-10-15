@@ -712,7 +712,7 @@
                                 new TradingView.widget({
                                     "autosize": false,
                                     "width": "100%",
-                                  "height": "100%",
+                                    "height": "100%",
                                     "symbol": "NASDAQ:AAPL",
                                     "interval": "D",
                                     "timezone": "Etc/UTC",
@@ -1316,7 +1316,7 @@
                                     </div>
                                 </div>
 
-                                <div style="background-color:  white;height: 232px; overflow-y: scroll;"
+                                <div style="background-color:  white;height: 330px; overflow-y: scroll;"
                                     id="contentRows">
 
                                 </div>
@@ -1437,9 +1437,9 @@
 
                     <!-- Order with blue underline -->
                     <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
-                        <span class="boldblue">Orders</span>
+                        <span class="boldtext">Orders</span>
                     </div>
-                    <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
+                    <div class="div1" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
 
                     <!-- Centered -1.64 EUR -->
                     <div class="togivered" style="text-align: center; color: red; margin-bottom: 0.5rem;">
@@ -1452,199 +1452,787 @@
                     <!-- Balance and Free -->
                     <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
                         <div class="towhite">
-                                       
-                            
-                        <span class="boldtext"> Balance:3574.19</span>
-                            
+
+
+                            <span class="boldtext"> Balance:3574.19</span>
+
                         </div>
                         <div class="towhite">
-                            <span class="boldtext">                            Free: 128373729
+                            <span class="boldtext"> Free: 128373729
                             </span>
                         </div>
                     </div>
 
                     <!-- Equity and Level -->
                     <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
-                        <div  class="towhite">
+                        <div class="towhite">
 
-                            <span class="boldtext">                            Equity: 20833133
+                            <span class="boldtext"> Equity: 20833133
                             </span>
                         </div>
-                        <div  class="towhite">
-                            <span class="boldtext">                            Level:823198931%
+                        <div class="towhite">
+                            <span class="boldtext"> Level:823198931%
                             </span>
                         </div>
                     </div>
 
                     <!-- Margin -->
-                    
-                    <div  class="margin towhite" style="margin-bottom: 0.5rem;margin-left:50px ;text-align:left;">
 
-                        <span class="boldtext">                        Margin: 20
+                    <div class="margin towhite" style="margin-bottom: 0.5rem;margin-left:50px ;text-align:left;">
+
+                        <span class="boldtext"> Margin: 20
                         </span>
                     </div>
 
 
                     <!-- Positions with background color -->
-                    <div class="positions" style="background-color: #f2f2f2; padding: 0.5rem; margin-bottom: 0.5rem; ">
+                    <div class="positions todark" style="background-color: #f2f2f2; padding: 0.5rem; margin-bottom: 0.5rem; ">
                         Positions
                     </div>
 
+
+                    <div class="box  todark bg-light arrow-left mt-4">
+
+                        <div class="todark" style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EUR SD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+    
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+    
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark" style="display: flex; justify-content: space-around;">
+                            <div class="towhite todark">
+    
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark" >0.02</span>
+                            </div>
+                        </div>
+    
+
+                    </div>
+
                     <!-- EUR SD Sell and Value -->
-                    <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
-                        <div  class="towhite">
-                            <span class="boldtext">EUR SD</span> <span class="smtext">sell</span>
-                        </div>
-                        <div  class="towhite">
+                  
+                </div>
 
-                            <span class="boldtext">                            31332332
-                            </span>
+                <div id="isthisflex">
+                    <div id="" style="display: none;" class=" d-flex">
+                        <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
+                            <span onclick="ordermobilepagess()" class="boldtext tohover">Orders</span>
+                            <!-- <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;">
+                            </div> -->
                         </div>
-                    </div>
-
-                    <!-- 1.05055 and 0.02 -->
-                    <div style="display: flex; justify-content: space-around;">
-                        <div  class="towhite">
-
-                            <span class="boldtext">                            1.05055
-                            </span>
-                        </div>
-                        <div  class="towhite">
-                        <span class="boldtext">0.02</span>
+                        <div class="ms-3" style="text-align: left; color: blue; margin-bottom: 0.5rem;">
+                            <span onclick="historymobilepages()" class="active boldtext tohover">History</span>
+                            <!-- <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;">
+                            </div> -->
                         </div>
                     </div>
-
                 </div>
 
 
-
-                <div id="historymobilepage" class="historymobilepage">
-
+                <div id="historymobilepage" class="historymobilepage ">
 
 
-                    <div style="text-align: left; color: blue; margin-bottom: 0.5rem;">
-                        <span class="boldblue" >History</span>
-                    </div>
-                    <div class="div" style="background-color: blue; margin-top:30px; height: 3px; width:50px;"></div>
+
+
+
+
+
+
+
+
 
                     <!-- #hongkong50, 0.01, and sell 155804 -->
 
-                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
-                        <div
-                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
+                    <div onclick="showCard()" class="box   bg-light arrow-left">
 
-                                <span class="boldtext" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext">sell</span>
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
                             </div>
 
-                            <div class="boldtext">
+                            <div class="boldtext todark">
                                 155804
                             </div>
-                            <div class="mt-4">1</div>
+                            <div class="mt-4 todark">1</div>
 
 
                         </div>
 
-                        <div style="display: flex; justify-content: space-evenly;">
-                            <div class="boldtext">
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
                                 21211312 at 322113
                             </div>
-                            <div class="boldtext">
+                            <div class="boldtext todark">
                                 200232122 21.322
                             </div>
                             <div></div>
+
                         </div>
 
                     </div>
 
-                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
-                        <div
-                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
 
-                                <span class="boldtext" style="font-weight: bold;"> #Hongkong50</span>
-                                <span class="smtext">sell</span>
+
+
+
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
                             </div>
 
-                            <div class="boldtext">
+                            <div class="boldtext todark">
                                 155804
                             </div>
-                            <div class="mt-4">1</div>
+                            <div class="mt-4 todark">1</div>
 
 
                         </div>
 
-                        <div style="display: flex; justify-content: space-evenly;">
-                            <div class="boldtext">
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
                                 21211312 at 322113
                             </div>
-                            <div class="boldtext">
+                            <div class="boldtext todark">
                                 200232122 21.322
                             </div>
                             <div></div>
+
                         </div>
 
                     </div>
-                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
-                        <div
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
                             style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
+                            <div class="todark">
 
-                                <span class="boldtext" style="font-weight: bold;"> #DIS.N</span>
-                                <span class="smtext">sell</span>
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
                             </div>
 
-                            <div class="boldtext">
-                                1552204
+                            <div class="boldtext todark">
+                                155804
                             </div>
-                            <div class="mt-4">1</div>
+                            <div class="mt-4 todark">1</div>
 
 
                         </div>
 
-                        <div style="display: flex; justify-content: space-evenly;">
-                            <div class="boldtext">
-                                40902211312 at 43424233
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
+                                21211312 at 322113
                             </div>
-                            <div class="boldtext">
-                                42342423 242343242 </div>
-                            <div></div>
-                        </div>
-
-                    </div>
-                    <div class="outers mb-1" style="background-color: #f5f5f5; padding: 1rem; font-size: 1rem;">
-                        <div
-                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
-                            <div>
-
-                              
-                                <span class="boldtext" style="font-weight: bold;"> #AA</span>
-                                <span class="smtext">sell</span>
-                            </div>
-
-                            <div class="boldtext">
-                                1551111
-                            </div>
-                            <div class="mt-4">1</div>
-
-
-                        </div>
-
-                        <div style="display: flex; justify-content: space-evenly;">
-                            <div class="boldtext">
-                                231323 at 234424234
-                            </div>
-                            <div class="boldtext">
-                                742328.32243
+                            <div class="boldtext todark">
+                                200232122 21.322
                             </div>
                             <div></div>
+
                         </div>
 
                     </div>
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
+                                21211312 at 322113
+                            </div>
+                            <div class="boldtext todark">
+                                200232122 21.322
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
+                                21211312 at 322113
+                            </div>
+                            <div class="boldtext todark">
+                                200232122 21.322
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
+                                21211312 at 322113
+                            </div>
+                            <div class="boldtext todark">
+                                200232122 21.322
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
+                                21211312 at 322113
+                            </div>
+                            <div class="boldtext todark">
+                                200232122 21.322
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+                    <div class="box  bg-light arrow-left">
+
+                        <div class=" todark"
+                            style="display: flex; justify-content: space-evenly; align-items: center; margin-bottom: 0.5rem;">
+                            <div class="todark">
+
+                                <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                                <span class="smtext todark">sell</span>
+                            </div>
+
+                            <div class="boldtext todark">
+                                155804
+                            </div>
+                            <div class="mt-4 todark">1</div>
+
+
+                        </div>
+
+                        <div class="todark" style=" display: flex; justify-content: space-evenly;">
+                            <div class="boldtext todark">
+                                21211312 at 322113
+                            </div>
+                            <div class="boldtext todark">
+                                200232122 21.322
+                            </div>
+                            <div></div>
+
+                        </div>
+
+                    </div>
+
 
 
                 </div>
+
+                <div id="ordersmobilepagesecond" style="display: none;" class="ordersmobilepage ">
+
+
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class=" box box1 bg-light arrow-left todark px-3">
+
+                        <!-- Top Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">Action</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">Ticket</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark"></span></div>
+                        </div>
+
+                        <!-- Middle Section -->
+                        <div class="todark" style="display: flex; justify-content: space-between;">
+                            <div class="boldtext todark">
+                                <span class="boldtext todark" style="font-size: 15px;">balance</span>
+                            </div>
+                            <div class="boldtext todark">
+                                <span style="font-size: 15px;" class="boldtext todark">122222</span>
+
+                            </div>
+                            <div class="boldtext todark"><span class="boldtext todark">200</span></div>
+                        </div>
+
+                        <!-- Date Section -->
+                        <div class="todark date" style="margin-left: 20px;">
+                            <div style="font-size: 13px;" class="boldtext todark">
+                                Date
+                            </div>
+                            <div class=" boldtext todark">
+                                2023.10.14.2023
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+                <div id="card" class="car4">
+
+                    <div class=" todark"
+                        style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;">Ticket</span>
+                        </div>
+
+                        <div class="boldtext todark">
+                            Symbol
+                        </div>
+                    </div>
+
+
+                    <div class=" todark"
+                        style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+                            155804
+
+
+                        </div>
+
+                        <div class="boldtext todark">
+
+
+                            <span class="boldtext todark" style="font-weight: bold;"> #Hongkong50</span>
+                            <span class="smtext todark">sell</span>
+                        </div>
+
+
+                    </div>
+
+                    <hr>
+
+
+
+                    <div class=" todark"
+                        style="display: flex; justify-content:space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;">Volume</span>
+                        </div>
+
+                        <div class="boldtext todark">
+                            Profit
+                        </div>
+                    </div>
+
+                    <div class=" todark"
+                        style="display: flex; justify-content:space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;"> 0.01</span>
+                        </div>
+
+                        <div class=" smtext boldtext todark">
+                            -0.02
+                        </div>
+
+
+                    </div>
+
+                    <hr>
+                    <div class=" todark"
+                        style="display: flex; justify-content:space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;">Stop Loss</span>
+                        </div>
+
+                        <div class="boldtext todark">
+                            Take Profit
+                        </div>
+                    </div>
+
+                    <div class=" todark"
+                        style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;">
+                                0
+                            </span>
+                        </div>
+
+                        <div class="  boldtext todark">
+                            0
+
+                        </div>
+
+
+                    </div>
+
+                    <hr>
+
+                    <div class=" todark"
+                        style="display: flex; justify-content:space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;">Swap</span>
+                        </div>
+
+                        <div class="boldtext todark">
+                            Commission
+                        </div>
+                    </div>
+
+                    <div class=" todark"
+                        style="display: flex; justify-content: space-around; align-items: center; margin-bottom: 0.5rem;">
+                        <div class="todark">
+
+                            <span class="boldtext todark" style="font-weight: bold;">
+                                0
+                            </span>
+                        </div>
+
+                        <div class="  boldtext todark">
+                            0
+
+                        </div>
+
+
+                    </div>
+
+                    <hr>
+
+
+
+
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -1662,8 +2250,8 @@
                         <div class="col-2">
 
                             <div class="">
-                                <svg class="i" onclick="toggleCardformobile()" width="24" height="24" viewBox="0 0 24 24"
-                                    xmlns="http://www.w3.org/2000/svg">
+                                <svg class="i" onclick="toggleCardformobile()" width="24" height="24"
+                                    viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
                                     <path class="uu1" d="M15 7H7v2h8V7ZM7 15h5v2H7v-2ZM17 11H7v2h10v-2Z"></path>
                                     <path fill="blue" fill-rule="evenodd" clip-rule="evenodd"
                                         d="M19 3a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14Zm-1 2a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H6a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1h12Z">
@@ -1673,8 +2261,8 @@
                             Quotes
                         </div>
                         <div class="col-2">
-                            <div >
-                                <svg   onclick="togglewidgetonmobile()" xmlns="http://www.w3.org/2000/svg"
+                            <div>
+                                <svg onclick="togglewidgetonmobile()" xmlns="http://www.w3.org/2000/svg"
                                     viewBox="0 0 28 28" width="28" height="28" fill="currentColor">
                                     <path class="i"
                                         d="M17 11v6h3v-6h-3zm-.5-1h4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z">
@@ -2351,6 +2939,12 @@
 
         endsection.style.width = '82%';
         function togglewidgetonmobile() {
+            const toggler7 = document.getElementById('ordersmobilepagesecond');
+            toggler7.style.display = 'none';
+            const toggler8 = document.getElementById('isthisflex');
+            toggler8.style.display = 'none';
+
+
 
 
             const toggler = document.getElementById('widgetmobilescreen');
@@ -2425,7 +3019,8 @@
             const toggler3 = document.getElementById('mainCard');
             const toggler4 = document.getElementById('detailsCard');
             const nav = document.getElementById('sidebar');
-
+            const toggler8 = document.getElementById('isthisflex');
+            toggler8.style.display = 'none';
             const firstcontent = document.getElementById('firstcontent');
 
             const mainContent = document.getElementById('mainContent');
@@ -2439,7 +3034,8 @@
 
             firstcontent.style.display = 'none';
 
-
+            const toggler7 = document.getElementById('ordersmobilepagesecond');
+            toggler7.style.display = 'none';
             if (toggler.style.display === 'none' || !toggler.style.display) {
                 toggler.style.display = 'block';
                 toggler1.style.display = 'none';
@@ -2465,55 +3061,13 @@
 
         };
 
-        function historymobilepages() {
-
-            const toggler = document.getElementById('historymobilepage');
-            const toggler1 = document.getElementById('trademobilepage');
-            const toggler2 = document.getElementById('widgetmobilescreen');
-            const toggler3 = document.getElementById('mainCard');
-            const toggler4 = document.getElementById('detailsCard');
-
-
-            const nav = document.getElementById('sidebar');
-            const firstcontent = document.getElementById('firstcontent');
-            firstcontent.style.display = 'none';
-
-            const endsection = document.getElementById('endsection');
-
-            endsection.style.width = '100%';
-            const mainContent = document.getElementById('mainContent');
-
-            mainContent.classList.remove('bordergiveparent');
-            mainContent.classList.add('borderrevised');
-            if (toggler.style.display === 'none' || !toggler.style.display) {
-                toggler.style.display = 'block';
-                toggler1.style.display = 'none';
-                toggler2.style.display = 'none';
-                toggler3.style.display = 'none';
-                toggler4.style.display = 'none';
-                nav.style.display = 'none';
-                firstcontent.style.display = 'none';
-
-
-
-
-            }
-
-            else {
-                toggler.style.display = 'none';
-                // mainContent.classList.remove('bordergiveparent');
-                // mainContent.classList.add('borderrevised');
-            }
-
-
-
-        };
 
 
 
         function toggleCardformobile() {
             const card = document.getElementById('mainCard');
-
+            const toggler8 = document.getElementById('isthisflex');
+            toggler8.style.display = 'none';
             const toggler = document.getElementById('historymobilepage');
             const toggler1 = document.getElementById('trademobilepage');
             const toggler2 = document.getElementById('widgetmobilescreen');
@@ -2526,7 +3080,8 @@
             const endsection = document.getElementById('endsection');
 
             endsection.style.width = '100%';
-
+            const toggler7 = document.getElementById('ordersmobilepagesecond');
+            toggler7.style.display = 'none';
 
 
             mainContent.classList.remove('bordergiveparent');
@@ -2574,8 +3129,10 @@
             const toggler2 = document.getElementById('widgetmobilescreen');
             const toggler3 = document.getElementById('mainCard');
             const toggler4 = document.getElementById('historymobilepage');
-
-
+            const toggler7 = document.getElementById('ordersmobilepagesecond');
+            toggler7.style.display = 'none';
+            const toggler8 = document.getElementById('isthisflex');
+            toggler8.style.display = 'none';
             const endsection = document.getElementById('endsection');
 
             endsection.style.width = '100%';
@@ -2619,8 +3176,138 @@
         };
 
 
+        function historymobilepages() {
+
+            const toggler = document.getElementById('historymobilepage');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('widgetmobilescreen');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('detailsCard');
+
+            const toggler6 = document.getElementById('isthisflex');
+
+            toggler6.style.display = 'flex'
 
 
+
+
+            const toggler7 = document.getElementById('ordersmobilepagesecond');
+
+
+            const nav = document.getElementById('sidebar');
+            const firstcontent = document.getElementById('firstcontent');
+            firstcontent.style.display = 'none';
+
+            const endsection = document.getElementById('endsection');
+
+            endsection.style.width = '100%';
+            const mainContent = document.getElementById('mainContent');
+
+            mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
+            if (toggler.style.display === 'none' || !toggler.style.display) {
+                toggler.style.display = 'block';
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display = 'none';
+                toggler7.style.display = 'none';
+
+                nav.style.display = 'none';
+                firstcontent.style.display = 'none';
+
+
+
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+
+        };
+
+
+
+
+        function ordermobilepagess() {
+
+            const toggler = document.getElementById('ordersmobilepagesecond');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('widgetmobilescreen');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('detailsCard');
+            const toggler5 = document.getElementById('historymobilepage');
+
+
+
+            const nav = document.getElementById('sidebar');
+            const firstcontent = document.getElementById('firstcontent');
+            firstcontent.style.display = 'none';
+
+            const endsection = document.getElementById('endsection');
+
+            endsection.style.width = '100%';
+            const mainContent = document.getElementById('mainContent');
+
+            mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
+            if (toggler.style.display === 'none' || !toggler.style.display) {
+                toggler.style.display = 'block';
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display = 'none';
+                toggler5.style.display = 'none';
+                nav.style.display = 'none';
+                firstcontent.style.display = 'none';
+
+
+
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+
+        };
+
+
+        function showCard() {
+            const toggler = document.getElementById("card");
+
+            if (toggler.style.display === 'none' || !toggler.style.display) {
+                toggler.style.display = 'block';
+                // toggler1.style.display = 'none';
+                // toggler2.style.display = 'none';
+                // toggler3.style.display = 'none';
+                // toggler4.style.display = 'none';
+                // toggler5.style.display = 'none';
+                // nav.style.display = 'none';
+                // firstcontent.style.display = 'none';
+
+
+
+
+            }
+
+            else {
+                toggler.style.display = 'none'
+            }
+
+
+
+
+        }
 
 
 
