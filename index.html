@@ -236,9 +236,24 @@
 
                         <div id="marketExecutionDropdown" class="dropdown-menu dropdown-container rounded-0"
                             aria-labelledby="dropdownMenuButton">
-                            <div class="d-flex mb-3 innerdropdown justify-content-between align-items-center">
+
+
+                            <div class="d-flex justify-content-between mt-2 d-block d-lg-none px-3">
+                                <div  class="text-center ersd">
+                                    EURSD
+                                </div>
+                                <button id="closeDropdownBtn" onclick="toggleDropdown()">
+                                    <i style=" color: skyblue;" class="fas fa-times"></i>
+                                </button>
+                            </div>
+
+                            <hr>
+
+                            <div class="d-flex mb-3 d-lg-flex d-none innerdropdown justify-content-between align-items-center">
                                 <!-- Market Execution Dropdown button -->
-                                <div class="dropdown ">
+
+                               
+                                <div class="dropdown  ">
                                     <button style="font-size: 14px;" class="btn specialbutton  dropdown-toggle"
                                         type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown"
                                         aria-expanded="false">
@@ -283,7 +298,7 @@
                                     </div>
                                 </div>
                                 <div class="d-flex mt-3 justify-content-between">
-                                    <div class="option">
+                                    <div style="width: 50%;" class="option">
                                         <label style="font-size: 13px;">Stop Loss</label>
 
                                         <div class="control innervolume1 innervolume">
@@ -297,7 +312,7 @@
                                             </button>
                                         </div>
                                     </div>
-                                    <div class="option">
+                                    <div style="width: 50%;"  class="option">
                                         <label style="font-size: 13px;">Take Profit</label>
                                         <div class="control innervolume1 innervolume">
                                             <button onclick="decrementValue('takeprofit')">
@@ -479,7 +494,7 @@
 
 
 
-                        <svg onclick="toggleDropdown()" width="24" height="24" viewBox="0 0 24 24"
+                        <svg class="one1" onclick="toggleDropdown()" width="24" height="24" viewBox="0 0 24 24"
                             xmlns="http://www.w3.org/2000/svg">
                             <g fill="none" fill-rule="evenodd">
                                 <path fill="#DA5244"
@@ -491,6 +506,25 @@
                                 <path fill="#B0BEC5" d="M13 8v4.186l2.657 2.657-1.414 1.414L11 13V8z"></path>
                             </g>
                         </svg>
+
+
+                        <svg style="display: none;" class="one2" onclick="toggledropdownmobile()" width="24" height="24"
+                            viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                            <g fill="none" fill-rule="evenodd">
+                                <path fill="#DA5244"
+                                    d="M11.5 4v2.02C8.42 6.276 6 8.856 6 12c0 3.145 2.42 5.725 5.5 5.98V20H10c-4.418 0-8-3.582-8-8s3.582-8 8-8h1.5z">
+                                </path>
+                                <path fill="#3687ED"
+                                    d="M14 4c4.418 0 8 3.582 8 8s-3.582 8-8 8h-1.5v-2.02c3.08-.256 5.5-2.836 5.5-5.98 0-3.145-2.42-5.725-5.5-5.98V4H14z">
+                                </path>
+                                <path fill="#B0BEC5" d="M13 8v4.186l2.657 2.657-1.414 1.414L11 13V8z"></path>
+                            </g>
+                        </svg>
+
+
+
+
+
 
 
 
@@ -1443,84 +1477,443 @@
 
                     <!-- Centered -1.64 EUR -->
                     <div class="togivered" style="text-align: center; color: red; margin-bottom: 0.5rem;">
-                        <span class="smtext">-1.64 EUR</span>
+                        <span class="smtext" > <h3 style="color:red " class="smtext1">-1.64 EUR</h3>  </span>
                     </div>
 
                     <!-- HR Line -->
-                    <hr style="margin-bottom: 0.5rem;" />
+                    <hr class="mt-2" style="margin-bottom: 0.5rem;" />
 
                     <!-- Balance and Free -->
-                    <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                    <div class="px-4" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
                         <div class="towhite">
 
 
-                            <span class="boldtext"> Balance:3574.19</span>
+                            <span class="boldtext"><span class="fw-lighter  boldtext">Balance</span><span class="fw-bold boldtext">: 3574.19</span></span>
 
                         </div>
                         <div class="towhite">
-                            <span class="boldtext"> Free: 128373729
-                            </span>
+                            <span class="boldtext "><span class="fw-lighter boldtext ">Free</span><span class="fw-bold boldtext">: 3574.19</span></span>
+
                         </div>
                     </div>
 
                     <!-- Equity and Level -->
-                    <div style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                    <div class="px-4" style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
                         <div class="towhite">
 
-                            <span class="boldtext"> Equity: 20833133
-                            </span>
+                            <span class="boldtext"><span class="fw-lighter boldtext ">Equity</span><span class="fw-bold boldtext">: 3574.19</span></span>
+
                         </div>
                         <div class="towhite">
-                            <span class="boldtext"> Level:823198931%
-                            </span>
+                            <span class="boldtext"><span class="fw-lighter  boldtext">Level</span><span class="fw-bold boldtext">: 3574.19</span></span>
+
                         </div>
                     </div>
 
                     <!-- Margin -->
 
-                    <div class="margin towhite" style="margin-bottom: 0.5rem;margin-left:50px ;text-align:left;">
+                    <div class="px-4" style="display: flex;  justify-content: space-between; margin-bottom: 0.5rem;">
+                        <div class="towhite me-5">
 
-                        <span class="boldtext"> Margin: 20
-                        </span>
+                            <span class="boldtext"><span class="fw-lighter boldtext  " >Margin</span><span class="fw-bold boldtext">: 20</span></span>
+
+                        </div>
+                        <div class="towhite" style="visibility: hidden;">
+                            <span class="boldtext"><span class="fw-lighter ">Level</span><span class="fw-bold">: 3574.19</span></span>
+
+                        </div>
                     </div>
 
-
                     <!-- Positions with background color -->
-                    <div class="positions todark" style="background-color: #f2f2f2; padding: 0.5rem; margin-bottom: 0.5rem; ">
+                    <div class="positions todark ms-2 mt-2"
+                        style="background-color: #f2f2f2; padding: 0.5rem; margin-bottom: 0.5rem; ">
                         Positions
                     </div>
 
 
-                    <div class="box  todark bg-light arrow-left mt-4">
+                    <div class="box  todark bg-light arrow-left mt-2">
 
-                        <div class="todark" style="display: flex; justify-content: space-around; margin-bottom: 0.5rem;">
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
                             <div class="towhite todark">
-                                <span class="boldtext todark">EUR SD</span> <span class="smtext todark">sell</span>
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
                             </div>
                             <div class="towhite todark">
-    
+
                                 <span class=" todark boldtext"> 31332332
                                 </span>
                             </div>
                         </div>
-    
+
                         <!-- 1.05055 and 0.02 -->
-                        <div class="todark" style="display: flex; justify-content: space-around;">
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
                             <div class="towhite todark">
-    
+
                                 <span class="boldtext todark"> 1.05055
                                 </span>
                             </div>
                             <div class="towhite todark">
-                                <span class="boldtext todark" >0.02</span>
+                                <span class="boldtext todark">0.02</span>
                             </div>
                         </div>
-    
+
+
+                    </div>
+                    <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
+
+                    </div>   <div class="box  todark bg-light arrow-left mt-2">
+
+                        <div class="todark px-4 mt-2"
+                            style="display: flex; justify-content: space-between; margin-bottom: 0.5rem;">
+                            <div class="towhite todark">
+                                <span class="boldtext todark">EURUSD</span> <span class="smtext todark">sell</span>
+                            </div>
+                            <div class="towhite todark">
+
+                                <span class=" todark boldtext"> 31332332
+                                </span>
+                            </div>
+                        </div>
+
+                        <!-- 1.05055 and 0.02 -->
+                        <div class="todark px-4 mt-1" style="display: flex; justify-content: space-between;">
+                            <div class="towhite todark">
+
+                                <span class="boldtext todark"> 1.05055
+                                </span>
+                            </div>
+                            <div class="towhite todark">
+                                <span class="boldtext todark">0.02</span>
+                            </div>
+                        </div>
+
 
                     </div>
 
                     <!-- EUR SD Sell and Value -->
-                  
+
                 </div>
 
                 <div id="isthisflex">
@@ -2246,7 +2639,7 @@
 
                 <div class="container d-lg-none">
 
-                    <div id="endsection" class=" endsection row ms-2">
+                    <div id="endsection" class=" endsection d-flex row ms-2">
                         <div class="col-2">
 
                             <div class="">
@@ -2263,7 +2656,7 @@
                         <div class="col-2">
                             <div>
                                 <svg onclick="togglewidgetonmobile()" xmlns="http://www.w3.org/2000/svg"
-                                    viewBox="0 0 28 28" width="28" height="28" fill="currentColor">
+                                    viewBox="0 0 28 28" width="28" height="28" fill="currentColor" class="custom-svg">
                                     <path class="i"
                                         d="M17 11v6h3v-6h-3zm-.5-1h4a.5.5 0 0 1 .5.5v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .5-.5z">
                                     </path>
@@ -3154,7 +3547,7 @@
                 toggler.style.display = 'block';
 
                 nav.style.display = 'none';
-                firstcontent.style.display = 'block';
+                firstcontent.style.display = 'flex';
 
 
 
@@ -3309,6 +3702,93 @@
 
         }
 
+
+
+
+        // function toggledropdownmobile() {
+        //     const dropdown = document.getElementById('marketExecutionDropdown');
+
+
+        //     const toggler1 = document.getElementById('trademobilepage');
+        //     const toggler2 = document.getElementById('widgetmobilescreen');
+        //     // const toggler3 = document.getElementById('mainCard');
+        //     const toggler4 = document.getElementById('detailsCard');
+        //     const nav = document.getElementById('sidebar');
+        //     nav.style.display = 'none';
+        //     firstcontent.style.display = 'none';
+
+
+
+        //     const firstcontent = document.getElementById('firstcontent');
+
+        //     const toggler5 = document.getElementById('historymobilepage');
+        //     if (dropdown.style.display === 'none' || !dropdown.style.display) {
+        //         dropdown.style.display = 'block';
+
+        //         toggler1.style.display = 'none';
+        //         toggler2.style.display = 'none';
+        //         // toggler3.style.display = 'none';
+        //         toggler4.style.display = 'none';
+        //         // toggler5.style.display = 'none';
+
+        //     } else {
+        //         dropdown.style.display = 'none';
+        //     }
+        // }
+
+        function toggledropdownmobile() {
+
+            const toggler = document.getElementById('marketExecutionDropdown');
+            const toggler1 = document.getElementById('trademobilepage');
+            const toggler2 = document.getElementById('widgetmobilescreen');
+            const toggler3 = document.getElementById('mainCard');
+            const toggler4 = document.getElementById('historymobilepage');
+            const toggler7 = document.getElementById('ordersmobilepagesecond');
+            toggler7.style.display = 'none';
+            const toggler8 = document.getElementById('isthisflex');
+            toggler8.style.display = 'none';
+            const endsection = document.getElementById('endsection');
+
+            endsection.style.display = 'none';
+            const mainContent = document.getElementById('mainContent');
+
+            mainContent.classList.remove('bordergiveparent');
+            mainContent.classList.add('borderrevised');
+
+
+
+            const nav = document.getElementById('sidebar');
+            nav.style.display = 'none';
+
+
+            const firstcontent = document.getElementById('firstcontent');
+            // firstcontent.style.display = 'none';
+
+
+
+            if (toggler.style.display === 'none' || !toggler.style.display) {
+                toggler.style.display = 'block';
+
+                nav.style.display = 'none';
+
+
+
+                toggler1.style.display = 'none';
+                toggler2.style.display = 'none';
+                toggler3.style.display = 'none';
+                toggler4.style.display = 'none';
+
+            }
+
+            else {
+                toggler.style.display = 'none';
+                // mainContent.classList.remove('bordergiveparent');
+                // mainContent.classList.add('borderrevised');
+            }
+
+
+
+        };
 
 
 
