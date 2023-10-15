@@ -829,10 +829,22 @@ body.dark-mode #sidebar .sidebardown {
         color: red !important;
     }
 
+  
    
     
 }
 
+
+body.dark-mode .rightline{
+    border-right: 1px solid white !important;
+
+    padding-right: 18px !important;
+}
+
+
+body.dark-mode .bordergive{
+    border-bottom: 1px solid white !important;
+}
 
 
 body.dark-mode .todark {
@@ -1136,14 +1148,15 @@ i:hover{
         
     }
     #margingiving2{
-        margin-left: 90px !important;
+        margin-left: 212px !important;
         
 
     }
     #toleftnavbartoggle {
         position: absolute;
         left: -2%;
-         top:2.3%;
+         top:3.1%;
+         padding-top: 10px !important;
         transform: translateY(-50%); /* Adjusts the positioning to make it truly centered vertically */
         background-color: white;
 width: 10% !important;
@@ -1257,6 +1270,7 @@ width: 100% !important ;
     .box1
     {
         height: 90px !important;
+        margin-top: 5px !important;
     }
 .historymobilepage,.ordersmobilepage{
     height: 500px !important;
@@ -1566,15 +1580,22 @@ rightline1{
 }
 
 
-@media (min-width: 467px) and (max-width: 579px) {
+@media (min-width: 400px) and (max-width: 573px) {
     #margingiving2{
-        margin-left: 120px !important;
+        margin-left: 150px !important;
         
 
     }
 }
 
 
+@media  (max-width: 399px) {
+    #margingiving2{
+        margin-left: 108px !important;
+overflow: visible;        
+
+    }
+}
 
 
 
