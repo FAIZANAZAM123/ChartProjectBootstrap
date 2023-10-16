@@ -833,7 +833,10 @@ body.dark-mode #sidebar .sidebardown {
    
     
 }
-
+.body.dark-mode .endsection {
+    border-top:2px solid white !important ;
+    background-color: black !important;
+}
 
 body.dark-mode .rightline{
     border-right: 1px solid white !important;
@@ -1273,7 +1276,7 @@ width: 100% !important ;
         margin-top: 5px !important;
     }
 .historymobilepage,.ordersmobilepage{
-    height: 500px !important;
+    height: 80vh !important;
     overflow-y: scroll;
 }
 
@@ -1400,7 +1403,8 @@ width: 100% !important ;
     justify-content: space-between;
     width: 88%;
     z-index: 1000;
-    top: 90%;
+    top: 91%;
+    border-top:1px solid white !important ;
     align-items: end;
     position: fixed;
 
@@ -1412,6 +1416,13 @@ width: 100% !important ;
     display: none !important;
 }
 
+.small-icon {
+    font-size: 20px !important; 
+}
+
+.iconss{
+    height: 28px !important;
+}
 
 i{
     margin-left: 10px !important;
