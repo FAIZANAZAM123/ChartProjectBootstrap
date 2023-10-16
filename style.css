@@ -37,8 +37,8 @@ body {
     background-color: white !important;
 }
 
-#widgetmobilescreen{
-    height: 73.5vh  !important;
+#widgetmobilescreen {
+    height: 73.5vh !important;
 }
 
 
@@ -472,7 +472,7 @@ input {
 .content1 .option {
     padding: 10px 15px;
     border-bottom: 1px solid #e5e5e5;
-    
+
 }
 
 .content1 .option:last-child {
@@ -753,7 +753,7 @@ body.dark-mode #sidebar .sidebardown {
     }
 
     .uu1 {
-        fill:blue !important
+        fill: blue !important
     }
 
     .buy {
@@ -774,109 +774,115 @@ body.dark-mode #sidebar .sidebardown {
     .gameee {
         background-color: #1f1f1f !important;
     }
-    .outers{
+
+    .outers {
         background-color: white !important;
     }
 
-    .speciala{
-        width:24px !important;
+    .speciala {
+        width: 24px !important;
     }
 
-    .boldtext{
+    .boldtext {
         color: white !important;
     }
-    .boldblue{
+
+    .boldblue {
         color: blue !important;
         text-decoration-line: underline !important;
     }
-    .smtext{
+
+    .smtext {
         color: red !important;
     }
 
-    .smtext1{
+    .smtext1 {
         color: red !important;
     }
 
-    .div1{
+    .div1 {
         background-color: #3687ED !important;
 
     }
-    .tohover:hover{
+
+    .tohover:hover {
         border-bottom: 4px solid blue !important;
     }
 
-    .custom-svg:hover .i{
+    .custom-svg:hover .i {
         fill: blue !important
     }
 
-    
 
-    .div:hover{
-            background-color: #3687ED !important;
-        }
-    
 
-    i:hover{
+    .div:hover {
+        background-color: #3687ED !important;
+    }
+
+
+    i:hover {
         color: blue !important;
     }
-    .i{
+
+    .i {
 
         fill: blue !important;
     }
 
-    .togivered{
+    .togivered {
 
         color: red !important;
     }
 
-  
-   
-    
+
+
+
 }
+
 .body.dark-mode .endsection {
-    border-top:2px solid white !important ;
+    border-top: 2px solid white !important;
     background-color: black !important;
 }
 
-body.dark-mode .rightline{
+body.dark-mode .rightline {
     border-right: 1px solid white !important;
 
     padding-right: 18px !important;
 }
 
 
-body.dark-mode .bordergive{
+body.dark-mode .bordergive {
     border-bottom: 1px solid white !important;
 }
 
 
 body.dark-mode .todark {
-    background-color:#2e2e2e !important; 
+    background-color: #2e2e2e !important;
 
-    border-radius: 12px ;
+    border-radius: 12px;
 
 }
+
 body.dark-mode .todark1 {
-    background-color: 2e2e2e !important; 
+    background-color: 2e2e2e !important;
 
     /* border-radius: 12px ; */
 
 }
 
 
-body.dark-mode .box.arrow-left::after
-{
+body.dark-mode .box.arrow-left::after {
 
     /* background-color: green !important;  */
     border-top: 10px solid transparent;
     border-right: 10px solid #2e2e2e;
     border-left: none;
     border-bottom: 10px solid transparent;
-    
+
 
 }
 
-body.dark-mode .box{
+body.dark-mode .box {
     border-radius: 10px !important;
 
 }
@@ -916,7 +922,7 @@ body.dark-mode .box{
 
 }
 
-.custom-svg:hover .i{
+.custom-svg:hover .i {
     fill: blue !important
 }
 
@@ -949,14 +955,15 @@ body.dark-mode .box{
 
 .tradingview-widget-container,
 tradingview_c6b91 {
-    overflow-x: scroll; 
-     /* overflow-y: scroll; */
+    overflow-x: scroll;
+    /* overflow-y: scroll; */
 }
 
-i:hover{
+i:hover {
     color: blue !important;
 }
-.i:hover{
+
+.i:hover {
     color: blue !important;
 }
 
@@ -1039,7 +1046,7 @@ i:hover{
         margin-right: auto !important;
     }
 
-    
+
 
     /* .bordergiveparent{
         width:120% !important;
@@ -1058,7 +1065,7 @@ i:hover{
     .bordergiveparent {
         width: 92% !important;
     }
-    
+
 }
 
 
@@ -1094,7 +1101,7 @@ i:hover{
     }
 
     .bordergiveparent {
-        width:88% !important;
+        width: 88% !important;
     }
 
 
@@ -1125,7 +1132,7 @@ i:hover{
 
 }
 
-#mainCard{
+#mainCard {
     height: 73.5vh !important;
 }
 
@@ -1139,81 +1146,88 @@ i:hover{
         display: block !important;
     }
 
-  
-    #hiddingit{
+
+    #hiddingit {
         display: none !important;
 
     }
-    #margingiving{
-        margin-left:20px !important ;
+
+    #margingiving {
+        margin-left: 20px !important;
         display: flex !important;
-        justify-content:space-evenly !important;
-        
-    }
-    #margingiving2{
-        margin-left: 212px !important;
-        
+        justify-content: space-evenly !important;
 
     }
+
+    #margingiving2 {
+        margin-left: 212px !important;
+
+
+    }
+
     #toleftnavbartoggle {
         position: absolute;
         left: -2%;
-         top:3.1%;
-         padding-top: 10px !important;
-        transform: translateY(-50%); /* Adjusts the positioning to make it truly centered vertically */
+        top: 3.1%;
+        padding-top: 10px !important;
+        transform: translateY(-50%);
+        /* Adjusts the positioning to make it truly centered vertically */
         background-color: white;
-width: 10% !important;
-height: 44px !important;
+        width: 10% !important;
+        height: 44px !important;
         border: 1px solid #e5e5e5 !important;
         border-top: none !important;
         border-left: none !important;
-        
-        z-index: 1000; /* This ensures the button stays on top of other content */
+
+        z-index: 1000;
+        /* This ensures the button stays on top of other content */
     }
-.margintop{
-    margin-top: 10px !important;
-}
+
+    .margintop {
+        margin-top: 10px !important;
+    }
 
 
     #detailsCard {
         margin: 0px !important;
         display: none;
-        height:600px;
-width: 100% !important ;
-        
+        height: 600px;
+        width: 100% !important;
+
         z-index: 100000;
     }
 
-    #mainCard{
+    #mainCard {
         display: none;
-        
-    
+
+
     }
 
-    .table-responsive{
+    .table-responsive {
         display: none;
     }
-    .orders{
-        display: none !important ;
+
+    .orders {
+        display: none !important;
     }
 
-    .viewss{
+    .viewss {
         margin-top: 0px !important;
     }
 
 
-    main{
+    main {
         height: 30vh !important;
     }
 
 
-    .firstrow{
-        display: flex ;
+    .firstrow {
+        display: flex;
         justify-content: space-between !important;
     }
 
 
-    .alertbutton{
+    .alertbutton {
         height: 70px !important;
     }
 
@@ -1270,24 +1284,26 @@ width: 100% !important ;
 
     /* Card left arrow */
 
-    .box1
-    {
+    .box1 {
         height: 90px !important;
         margin-top: 5px !important;
     }
-.historymobilepage,.ordersmobilepage{
-    height:77vh !important;
-    overflow-y: scroll;
-}
 
-.trademobilepage{
-    height: 580px !important;
-    overflow-y: scroll;
+    .historymobilepage,
+    .ordersmobilepage {
+        height: 77vh !important;
+        overflow-y: scroll;
+    }
 
-}
-.smtext{
-    color: red !important;
-}
+    .trademobilepage {
+        height: 91vh !important;
+        overflow-y: scroll;
+
+    }
+
+    .smtext {
+        color: red !important;
+    }
 
 
     .box {
@@ -1301,16 +1317,16 @@ width: 100% !important ;
 
         margin-top: 6px !important;
 
-        margin-left:10px !important;
+        margin-left: 10px !important;
         border-radius: 10px !important;
 
-      }
-      
-      
-    
-      
-      
-      .box.arrow-left:after {
+    }
+
+
+
+
+
+    .box.arrow-left:after {
         content: " ";
         position: absolute;
         left: -10px;
@@ -1319,48 +1335,49 @@ width: 100% !important ;
         border-right: 10px solid whitesmoke;
         border-left: none;
         border-bottom: 10px solid transparent;
-      }
-    
+    }
 
 
-.innerdropdown{
-    width: 100% !important;
-}
-#marketExecutionDropdown{
-    width: 100% ;
-    height: 100vh !important;
-    overflow-x: scroll;
-    overflow-y: scroll;
 
-    margin-top: 0px !important;
-    z-index: 100000;
-}
+    .innerdropdown {
+        width: 100% !important;
+    }
 
-.one1{
-    display: none;
+    #marketExecutionDropdown {
+        width: 100%;
+        height: 100vh !important;
+        overflow-x: scroll;
+        overflow-y: scroll;
 
-}
+        margin-top: 0px !important;
+        z-index: 100000;
+    }
 
-.one2{
-    display: block !important;
-}
+    .one1 {
+        display: none;
 
-.ersd{
-    padding-left: 41% !important;
-}
+    }
 
-.toleft{
-    margin-left: -64px !important;
-}
+    .one2 {
+        display: block !important;
+    }
 
-/* .toright{
+    .ersd {
+        padding-left: 41% !important;
+    }
+
+    .toleft {
+        margin-left: -64px !important;
+    }
+
+    /* .toright{
 
     margin-left: 8rem !important;
     
 } */
-.fromdown{
-    margin-top: -11px !important;
-}  
+    .fromdown {
+        margin-top: -11px !important;
+    }
 
 
 
@@ -1370,21 +1387,21 @@ width: 100% !important ;
 
 
 
-@media (max-width:332px)
-{
-    .fa-minus,.fa-plus
-    {
+@media (max-width:332px) {
+
+    .fa-minus,
+    .fa-plus {
         font-size: 10px !important;
     }
 }
 
 @media (min-width:992px) {
-   
+
 
     .toshow {
         display: none !important;
     }
-    
+
 
 
 }
@@ -1392,19 +1409,19 @@ width: 100% !important ;
 
 
 /* Will put it  */
-.fa-minus,.fa-plus
-    {
-        font-size: 12px !important;
-    }
+.fa-minus,
+.fa-plus {
+    font-size: 12px !important;
+}
 
-.endsection{
+.endsection {
     /* display: block !important; */
     display: flex;
     justify-content: space-between;
     width: 88%;
     z-index: 1000;
     top: 91%;
-    border-top:1px solid white !important ;
+    border-top: 1px solid white !important;
     align-items: end;
     position: fixed;
 
@@ -1412,62 +1429,63 @@ width: 100% !important ;
 }
 
 
-.hidden{
+.hidden {
     display: none !important;
 }
 
 .small-icon {
-    font-size: 20px !important; 
+    font-size: 20px !important;
 }
 
-.iconss{
+.iconss {
     height: 28px !important;
 }
 
-i{
+i {
     margin-left: 10px !important;
 }
 
 
-.margin
-{
-    margin-left:10% !important;
+.margin {
+    margin-left: 10% !important;
 }
 
 
-#isthisflex{
+#isthisflex {
     display: none;
 }
-.trademobilepage{
+
+.trademobilepage {
     display: none;
 }
-.positions{
+
+.positions {
     padding-left: 20px !important;
 }
 
-.trademobilepage > *{
+.trademobilepage>* {
 
     margin-top: 4px !important;
 
-    
+
 }
 
-.historymobilepage{
+.historymobilepage {
     display: none;
 }
 
 
 .mobile-alert {
-    
-    width: 80%; 
+
+    width: 80%;
     height: 300px;
     background-color: #f9f9f9;
     padding: 15px;
     border-radius: 5px;
-    box-shadow: 0px 0px 15px rgba(0,0,0,0.1);
-    position: fixed; 
-    top: 20%; 
-    left: 14%; 
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 20%;
+    left: 14%;
     z-index: 9999;
     text-align: center;
     border: 3px solid blue;
@@ -1499,15 +1517,15 @@ margin-top: 5px !important;
     display: none;
     position: fixed;
 
-    min-height:200px;
-    bottom:0px;
+    min-height: 200px;
+    bottom: 0px;
     z-index: 1000000;
-    
+
     width: 100%;
     /* height: 100px; */
     background-color: #fff;
     border: 1px solid #ccc;
-    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
 /* .ticket {
@@ -1529,36 +1547,37 @@ margin-top: 5px !important;
 
 
 
-.tohover:hover{
+.tohover:hover {
     border-bottom: 4px solid blue !important;
     margin-top: 10px !important;
 }
 
-.tohover{
+.tohover {
     height: 50px !important;
     padding-bottom: 15px !important;
 }
 
 
 
-.border-right{
+.border-right {
     border-right: 1px solid black !important;
 }
 
 
 .rightline {
-    padding-right: 10px !important; 
-    border-right: 1px solid #000; 
+    padding-right: 10px !important;
+    border-right: 1px solid #000;
     /* box-sizing: border-box;  ensures the border and padding don't increase the total width */
 }
-rightline1{
-    border-right: 1px solid #000; 
+
+rightline1 {
+    border-right: 1px solid #000;
     /* box-sizing: border-box;  */
 
     padding-left: 10px !important;
 }
 
-.torigth{
+.torigth {
 
     padding-left: 20px !important;
 }
@@ -1567,7 +1586,7 @@ rightline1{
 
 
 
-.rightline2{
+.rightline2 {
     border-right: 1px solid black !important;
 
     padding-left: 10px !important;
@@ -1580,30 +1599,29 @@ rightline1{
 
 @media (max-width:579px) {
 
-    #toleftnavbartoggle
-    {
+    #toleftnavbartoggle {
         width: 16.5% !important;
-        left:-4% !important;
+        left: -4% !important;
     }
 
-    
-    
+
+
 }
 
 
 @media (min-width: 400px) and (max-width: 573px) {
-    #margingiving2{
+    #margingiving2 {
         margin-left: 150px !important;
-        
+
 
     }
 }
 
 
-@media  (max-width: 399px) {
-    #margingiving2{
+@media (max-width: 399px) {
+    #margingiving2 {
         margin-left: 108px !important;
-overflow: visible;        
+        overflow: visible;
 
     }
 }
@@ -1615,9 +1633,8 @@ overflow: visible;
 
 
 
-li{
+li {
 
     list-style-type: none !important;
     list-style: none !important;
 }
-
