@@ -1276,7 +1276,7 @@ width: 100% !important ;
         margin-top: 5px !important;
     }
 .historymobilepage,.ordersmobilepage{
-    height:520px !important;
+    height:82vh !important;
     overflow-y: scroll;
 }
 
