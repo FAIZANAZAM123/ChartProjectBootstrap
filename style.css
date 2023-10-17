@@ -857,14 +857,14 @@ body.dark-mode .bordergive {
 
 
 body.dark-mode .todark {
-    background-color: #2e2e2e !important;
+    background-color: #2D2D2D !important;
 
     border-radius: 12px;
 
 }
 
 body.dark-mode .todark1 {
-    background-color: 2e2e2e !important;
+    background-color: #2D2D2D !important;
 
     /* border-radius: 12px ; */
 
@@ -875,7 +875,7 @@ body.dark-mode .box.arrow-left::after {
 
     /* background-color: green !important;  */
     border-top: 10px solid transparent;
-    border-right: 10px solid #2e2e2e;
+    border-right: 10px solid #2D2D2D;
     border-left: none;
     border-bottom: 10px solid transparent;
 
